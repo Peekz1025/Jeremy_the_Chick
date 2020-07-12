@@ -22,7 +22,6 @@ public class Gravity : MonoBehaviour
         if(target.enabled) // Things like screen transitions can disable an entity. Their gravity should only apply if they're active.
         {
             Vector2 v = new Vector2(0, -1 * accelerationDueToGravity * Time.deltaTime);
-            print(target.velocity.y);
 		    if(target.velocity.y >= -maximumVelocityDueToGravity) target.addVelocity(new Vector2(v.x, v.y));
         }
     }

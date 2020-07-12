@@ -78,10 +78,6 @@ public class Collisions : RaycastController
         float velocityOriginal = velocity;
         float rayLength = Mathf.Abs(velocity) + castOriginDepth;
 
-        bool stepStopped = false;
-        bool stepLegal = true;
-        int stepCount = 0;    
-
         // We send out rays evenly distributed across the length of the collider in this dimension.
         for (int i = 0; i < rayCount; i++)
         {
@@ -91,9 +87,6 @@ public class Collisions : RaycastController
             // If this ray hit a solid object...
             if (hit)
             {
-                if(!stepStopped) stepCount++;
-                else stepLegal = false;
-
                 // ....Don't totally recall why this is here? Guessing it probably stops you from getting locked in place if you end up in a wall.
                 if (hit.distance == 0)
                     continue;
@@ -108,18 +101,6 @@ public class Collisions : RaycastController
                 // Future rays need to only check up to the distance of where we hit the object, since we won't go any further than that.
                 rayLength = hit.distance;
             }
-            else
-            {
-                stepStopped = true;
-            }
-        }
-        if(stepLegal && stepCount < stepSize)
-        {
-            Vector2 trans = ((raySpacing*(stepCount)) * (new Vector2(-Mathf.Abs(rayDirection.y), Mathf.Abs(rayDirection.x))));
-            transform.position += new Vector3(trans.x, trans.y, 0);
-            UpdateRaycastOrigins();
-            velocity=velocityOriginal;
-            CheckCollisions(ref velocity, ref data, rayCount, rayOrigin, raySpacing, rayDirection, mask);
         }
     }
 }
