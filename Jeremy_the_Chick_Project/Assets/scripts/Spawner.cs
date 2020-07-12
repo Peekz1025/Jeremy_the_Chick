@@ -6,33 +6,22 @@ public class Spawner : MonoBehaviour
 {
 
     public GameObject prefab;
-    public GameObject button;
+    //public GameObject button;
     public Camera mainCamera;
 
     // Update is called once per frame
     public void SpawnObject()
     {
-        //dont do if the mouse overlaps the button.
-        //set it up as on the click, this happens
-
-
-        if (Input.GetButtonDown("Fire1"))// && Input.mousePosition.x == button.GetComponent(ImagePosition).x
-             //Input.GetMouseButtonDown(0)
-             //Input.touchCount > 0
+        if (Input.GetButtonDown("Fire1"))
+             //Input.GetMouseButtonDown(0) //mouse click
+             //Input.touchCount > 0 //all touch presses
         {
             Vector3 touchPosition = mainCamera.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1f));
             Instantiate(prefab, touchPosition, Quaternion.identity);
-            
+            Debug.Log("here");
         }
 
-
-
-
-
-
-
         /*
-
         //Input.touches.any(x => x.phase == TouchPhase.Began;
         //Input.GetButtonDown("Fire1");
 
@@ -54,9 +43,7 @@ public class Spawner : MonoBehaviour
             }
         }
         */
-
-
-
+        
 
     }
 }
