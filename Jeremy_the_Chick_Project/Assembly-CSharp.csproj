@@ -66,6 +66,7 @@
     <Compile Include="Assets\scripts\Entity.cs" />
     <Compile Include="Assets\scripts\Gravity.cs" />
     <Compile Include="Assets\scripts\Jeremy.cs" />
+    <Compile Include="Assets\scripts\Log_test.cs" />
     <Compile Include="Assets\scripts\Lose_Condition.cs" />
     <Compile Include="Assets\scripts\RaycastController.cs" />
     <Compile Include="Assets\scripts\SceneChanger.cs" />

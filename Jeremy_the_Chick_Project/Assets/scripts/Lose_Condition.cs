@@ -5,15 +5,24 @@ using UnityEngine;
 public class Lose_Condition : MonoBehaviour
 {
     public GameObject jeremyPrefab;
-    public Canvas lose_canvas;
+    public GameObject gameOverUI;
+    public static bool isGameOver = false;
 
     // Update is called once per frame
     void Update()
     {
         if (jeremyPrefab.transform.position.y < -10)
         {
-            lose_canvas.enabled = true;
-            Debug.Log("you lost");
+            //if (isGameOver == false) //causes error, idk why
+            GameOver();
         }
+    }
+
+    void GameOver()
+    {
+        gameOverUI.SetActive(true);
+        Time.timeScale = 0f;
+        isGameOver = true;
+        Debug.Log("you lost");
     }
 }
