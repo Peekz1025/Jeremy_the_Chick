@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -45,15 +45,10 @@ MonoBehaviour:
     y: 30
     width: 2560
     height: 1307
-<<<<<<< HEAD
-  m_MinSize: {x: 677, y: 492}
+  m_MinSize: {x: 678, y: 492}
   m_MaxSize: {x: 14001, y: 14042}
-=======
-  m_MinSize: {x: 679, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
->>>>>>> terraingen
   vertical: 0
-  controlID: 102
+  controlID: 104
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -69,15 +64,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 2050
+    x: 2007
     y: 0
-    width: 510
-=======
-    x: 2161
-    y: 0
-    width: 399
->>>>>>> terraingen
+    width: 553
     height: 1307
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
@@ -103,12 +92,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
-    width: 296
-=======
-    width: 332
->>>>>>> terraingen
-    height: 984
+    width: 497
+    height: 791
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 15}
@@ -132,13 +117,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 984
-<<<<<<< HEAD
-    width: 2050
-=======
-    width: 2161
->>>>>>> terraingen
-    height: 323
+    y: 791
+    width: 2007
+    height: 516
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 13}
@@ -233,16 +214,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
-    width: 2050
-=======
-    width: 2161
->>>>>>> terraingen
+    width: 2007
     height: 1307
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 103
+  controlID: 105
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -262,16 +239,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
-    width: 2050
-=======
-    width: 2161
->>>>>>> terraingen
-    height: 984
+    width: 2007
+    height: 791
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 104
+  controlID: 106
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -287,18 +260,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 296
+    x: 497
     y: 0
-    width: 1754
-=======
-    x: 332
-    y: 0
-    width: 1829
->>>>>>> terraingen
-    height: 984
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+    width: 1510
+    height: 791
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 16}
@@ -327,10 +294,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 378
-    y: 73
-    width: 1373
-    height: 769
+    x: 468
+    y: 181
+    width: 973
+    height: 501
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &13
 MonoBehaviour:
@@ -354,13 +321,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 1057
-<<<<<<< HEAD
-    width: 2049
-=======
-    width: 2160
->>>>>>> terraingen
-    height: 302
+    y: 864
+    width: 2006
+    height: 495
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -375,48 +338,34 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-<<<<<<< HEAD
-    - Assets/scripts
-  m_ViewMode: 1
-  m_StartGridSize: 64
-  m_LastFolders:
-  - Assets/scripts
-=======
     - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
   - Assets/Scenes
->>>>>>> terraingen
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Robby\Jeremy_the_Chick\Jeremy_the_Chick_Project
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-<<<<<<< HEAD
-    m_SelectedIDs: 4e390000
-    m_LastClickedID: 14670
-    m_ExpandedIDs: 000000004239000000ca9a3b
-=======
-    m_SelectedIDs: 46390000
-    m_LastClickedID: 14662
-    m_ExpandedIDs: 000000003c3900004439000000ca9a3b
->>>>>>> terraingen
+    m_SelectedIDs: 7e3a0000
+    m_LastClickedID: 14974
+    m_ExpandedIDs: 000000006c3a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: scripts
+      m_OriginalName: scripts
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 14976
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 5}
     m_SearchString: 
@@ -430,11 +379,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-<<<<<<< HEAD
-    m_ExpandedIDs: 0000000042390000
-=======
-    m_ExpandedIDs: 000000003c390000
->>>>>>> terraingen
+    m_ExpandedIDs: 000000006c3a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -462,7 +407,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c62300008239000000000000
+    m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -478,7 +423,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 3}
+      m_ClientGUIView: {fileID: 0}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -489,7 +434,7 @@ MonoBehaviour:
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
-  m_DirectoriesAreaWidth: 139
+  m_DirectoriesAreaWidth: 115
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -511,15 +456,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 2050
+    x: 2007
     y: 73
-    width: 509
-=======
-    x: 2161
-    y: 73
-    width: 398
->>>>>>> terraingen
+    width: 552
     height: 1286
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
@@ -557,23 +496,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
-<<<<<<< HEAD
-    width: 295
-=======
-    width: 331
->>>>>>> terraingen
-    height: 963
+    width: 496
+    height: 770
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 843a0000
       m_LastClickedID: 0
-<<<<<<< HEAD
-      m_ExpandedIDs: 40f9ffff44f9ffffe6f9fffffef9ffff04fbffffd03a0000fa3a0000
-=======
-      m_ExpandedIDs: 6eeaffff66faffff74faffff7efafffff2fafffffa390000
->>>>>>> terraingen
+      m_ExpandedIDs: 9ae0ffffc4e0ffffcee0ffff6ef4ffff38f7ffff54f7ffff5ef7ffff7af7ffff84f7ffffa0f7ffffaaf7ffffbaf8ffff3cfaffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -596,7 +527,7 @@ MonoBehaviour:
     m_LockTracker:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
-  m_WindowGUID: 4b4c9ebcb11cf2e44b943bdd515de005
+  m_WindowGUID: 375785e8c6378ba40b9c4da8a8e0294d
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -618,19 +549,13 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 296
+    x: 497
     y: 73
-    width: 1752
-=======
-    x: 332
-    y: 73
-    width: 1827
->>>>>>> terraingen
-    height: 963
+    width: 1508
+    height: 770
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
-  m_WindowGUID: eec6f97659aea6b4e8e46faa5b11c8bb
+  m_WindowGUID: 96ec92468d58dae4a84525b334e89e4f
   m_Gizmos: 1
   m_SceneIsLit: 1
   m_SceneLighting: 1
@@ -639,13 +564,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 960.3802, y: 507.0543, z: -255.76009}
+    m_Target: {x: 0, y: 0, z: 0}
     speed: 2
-<<<<<<< HEAD
-    m_Value: {x: 960.3802, y: 507.0543, z: -255.76009}
-=======
-    m_Value: {x: 2.15516, y: -7.4007087, z: -13.433381}
->>>>>>> terraingen
+    m_Value: {x: 0, y: 0, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -675,10 +596,10 @@ MonoBehaviour:
       m_Fade:
         m_Target: 0
         speed: 2
-        m_Value: 1
+        m_Value: 0
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
-      m_Size: {x: 1, y: 1}
+      m_Size: {x: 0, y: 0}
     zGrid:
       m_Fade:
         m_Target: 1
@@ -695,13 +616,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 691.1716
+    m_Target: 10
     speed: 2
-<<<<<<< HEAD
-    m_Value: 691.1716
-=======
-    m_Value: 18.785824
->>>>>>> terraingen
+    m_Value: 10
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -747,16 +664,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 296
+    x: 497
     y: 73
-    width: 1752
-=======
-    x: 332
-    y: 73
-    width: 1827
->>>>>>> terraingen
-    height: 963
+    width: 1508
+    height: 770
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -766,7 +677,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1675, y: 942}
+  m_TargetSize: {x: 1508, y: 749}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -775,16 +686,16 @@ MonoBehaviour:
   m_VSyncEnabled: 0
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 05000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -837.5
-    m_HBaseRangeMax: 837.5
-    m_VBaseRangeMin: -471
-    m_VBaseRangeMax: 471
+    m_HBaseRangeMin: -754
+    m_HBaseRangeMax: 754
+    m_VBaseRangeMin: -374.5
+    m_VBaseRangeMax: 374.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -802,40 +713,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-<<<<<<< HEAD
-      width: 1752
-      height: 942
+      width: 1508
+      height: 749
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 876, y: 471}
-=======
-      width: 1827
-      height: 942
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 913.5, y: 471}
->>>>>>> terraingen
+    m_Translation: {x: 754, y: 374.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-<<<<<<< HEAD
-      x: -876
-      y: -471
-      width: 1752
-      height: 942
+      x: -754
+      y: -374.5
+      width: 1508
+      height: 749
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1752, y: 963}
-=======
-      x: -913.5
-      y: -471
-      width: 1827
-      height: 942
-    m_MinimalGUI: 1
-  m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1827, y: 963}
->>>>>>> terraingen
+  m_LastWindowPixelSize: {x: 1508, y: 770}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -863,7 +757,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 1057
-    width: 2049
-    height: 302
+    y: 864
+    width: 2006
+    height: 495
   m_ViewDataDictionary: {fileID: 0}
