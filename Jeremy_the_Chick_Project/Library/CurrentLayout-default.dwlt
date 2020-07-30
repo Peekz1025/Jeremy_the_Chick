@@ -45,10 +45,15 @@ MonoBehaviour:
     y: 30
     width: 2560
     height: 1307
+<<<<<<< HEAD
   m_MinSize: {x: 677, y: 492}
   m_MaxSize: {x: 14001, y: 14042}
+=======
+  m_MinSize: {x: 679, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
+>>>>>>> terraingen
   vertical: 0
-  controlID: 101
+  controlID: 102
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -64,9 +69,15 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 2050
     y: 0
     width: 510
+=======
+    x: 2161
+    y: 0
+    width: 399
+>>>>>>> terraingen
     height: 1307
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
@@ -92,10 +103,14 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 296
+=======
+    width: 332
+>>>>>>> terraingen
     height: 984
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -118,7 +133,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 984
+<<<<<<< HEAD
     width: 2050
+=======
+    width: 2161
+>>>>>>> terraingen
     height: 323
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
@@ -214,12 +233,16 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 2050
+=======
+    width: 2161
+>>>>>>> terraingen
     height: 1307
-  m_MinSize: {x: 402, y: 492}
+  m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 102
+  controlID: 103
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -239,12 +262,16 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 2050
+=======
+    width: 2161
+>>>>>>> terraingen
     height: 984
-  m_MinSize: {x: 402, y: 221}
-  m_MaxSize: {x: 8002, y: 4021}
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 103
+  controlID: 104
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -260,9 +287,15 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 296
     y: 0
     width: 1754
+=======
+    x: 332
+    y: 0
+    width: 1829
+>>>>>>> terraingen
     height: 984
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
@@ -322,7 +355,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 1057
+<<<<<<< HEAD
     width: 2049
+=======
+    width: 2160
+>>>>>>> terraingen
     height: 302
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
@@ -338,20 +375,34 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets/scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
   - Assets/scripts
+=======
+    - Assets/Scenes
+  m_ViewMode: 1
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets/Scenes
+>>>>>>> terraingen
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Robby\Jeremy_the_Chick\Jeremy_the_Chick_Project
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: 4e390000
     m_LastClickedID: 14670
     m_ExpandedIDs: 000000004239000000ca9a3b
+=======
+    m_SelectedIDs: 46390000
+    m_LastClickedID: 14662
+    m_ExpandedIDs: 000000003c3900004439000000ca9a3b
+>>>>>>> terraingen
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -379,7 +430,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 0000000042390000
+=======
+    m_ExpandedIDs: 000000003c390000
+>>>>>>> terraingen
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -456,9 +511,15 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 2050
     y: 73
     width: 509
+=======
+    x: 2161
+    y: 73
+    width: 398
+>>>>>>> terraingen
     height: 1286
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
@@ -496,7 +557,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
+<<<<<<< HEAD
     width: 295
+=======
+    width: 331
+>>>>>>> terraingen
     height: 963
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
@@ -504,7 +569,11 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
+<<<<<<< HEAD
       m_ExpandedIDs: 40f9ffff44f9ffffe6f9fffffef9ffff04fbffffd03a0000fa3a0000
+=======
+      m_ExpandedIDs: 6eeaffff66faffff74faffff7efafffff2fafffffa390000
+>>>>>>> terraingen
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -549,9 +618,15 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 296
     y: 73
     width: 1752
+=======
+    x: 332
+    y: 73
+    width: 1827
+>>>>>>> terraingen
     height: 963
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
@@ -566,7 +641,11 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: 960.3802, y: 507.0543, z: -255.76009}
     speed: 2
+<<<<<<< HEAD
     m_Value: {x: 960.3802, y: 507.0543, z: -255.76009}
+=======
+    m_Value: {x: 2.15516, y: -7.4007087, z: -13.433381}
+>>>>>>> terraingen
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -618,7 +697,11 @@ MonoBehaviour:
   m_Size:
     m_Target: 691.1716
     speed: 2
+<<<<<<< HEAD
     m_Value: 691.1716
+=======
+    m_Value: 18.785824
+>>>>>>> terraingen
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -664,9 +747,15 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 296
     y: 73
     width: 1752
+=======
+    x: 332
+    y: 73
+    width: 1827
+>>>>>>> terraingen
     height: 963
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
@@ -713,16 +802,24 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
+<<<<<<< HEAD
       width: 1752
       height: 942
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 876, y: 471}
+=======
+      width: 1827
+      height: 942
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 913.5, y: 471}
+>>>>>>> terraingen
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
       x: -876
       y: -471
       width: 1752
@@ -730,6 +827,15 @@ MonoBehaviour:
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 1752, y: 963}
+=======
+      x: -913.5
+      y: -471
+      width: 1827
+      height: 942
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 1827, y: 963}
+>>>>>>> terraingen
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
