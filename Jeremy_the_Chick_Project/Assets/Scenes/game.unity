@@ -2240,7 +2240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 8717041412046344526, guid: d4280e1dfee072b41866cc8cb6d0cc29, type: 3}
-  mainCamera: {fileID: 0}
+  mainCamera: {fileID: 1095261019}
 --- !u!114 &2061810451
 MonoBehaviour:
   m_ObjectHideFlags: 0
