@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class SceneChanger : MonoBehaviour
 {
@@ -7,9 +8,7 @@ public class SceneChanger : MonoBehaviour
 
     public void LoadGame()
     {
-        Time.timeScale = 1f;
         SceneManager.LoadScene("game");
-        Time.timeScale = 1f;
     }
 
     public void LoadHome()
@@ -18,13 +17,9 @@ public class SceneChanger : MonoBehaviour
         SceneManager.LoadScene("home");
     }
 
-
-    public void ReloadGame()
+    public void Restart()
     {
-        Debug.Log("entered reload game");
-        Time.timeScale = 1f;
-        //SceneManager.GetActiveScene();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1f;
     }
 }
