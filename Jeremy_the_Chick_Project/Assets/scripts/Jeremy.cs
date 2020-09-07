@@ -12,7 +12,7 @@ public class Jeremy : Entity
     // LOCAL DATA
     private bool right = true;
 
-    private bool state_grounded = true;
+    public bool state_grounded = true;
 
 
 

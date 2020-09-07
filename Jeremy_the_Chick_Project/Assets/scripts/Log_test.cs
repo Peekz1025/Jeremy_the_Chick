@@ -7,15 +7,19 @@ public class Log_test : MonoBehaviour
 {
 
     public GameObject text;
+    public GameObject jeremy;
 
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("the game is running");
-        Debug.Log(Time.timeScale);
+        //Debug.Log("the game is running");
+        //Debug.Log(Time.timeScale);
 
-        text.GetComponent<UnityEngine.UI.Text>().text = Time.timeScale.ToString();
+        //text.GetComponent<UnityEngine.UI.Text>().text = Time.timeScale.ToString();
+
+        //Debug.Log(jeremy.GetComponent<Jeremy>().jumpVelocity);
+
 
     }
 
@@ -38,6 +42,12 @@ public class Log_test : MonoBehaviour
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         Time.timeScale = 1;
+    }
+
+    void Awake()
+    {
+        QualitySettings.vSyncCount = 0;  // VSync must be disabled
+        Application.targetFrameRate = 45;
     }
 
 }

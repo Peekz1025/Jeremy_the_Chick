@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 8717041412046344525}
   - component: {fileID: 8717041412046344521}
   - component: {fileID: 8717041412046344522}
+  - component: {fileID: 4117591164407611991}
+  - component: {fileID: 6717828914531773160}
   m_Layer: 0
   m_Name: log6
   m_TagString: Untagged
@@ -121,3 +123,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d643ae1ec1a1494ca765a43549686b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4117591164407611991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8717041412046344526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f984e20664240a4e934c69daeef398a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &6717828914531773160
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8717041412046344526}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

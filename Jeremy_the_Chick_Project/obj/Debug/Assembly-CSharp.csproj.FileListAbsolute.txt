@@ -306,3 +306,7 @@ C:\Users\Robby\Jeremy_the_Chick\Jeremy_the_Chick_Project\obj\Debug\Assembly-CSha
 C:\Users\Robby\Jeremy_the_Chick\Jeremy_the_Chick_Project\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 C:\Users\Robby\Jeremy_the_Chick\Jeremy_the_Chick_Project\obj\Debug\Assembly-CSharp.dll
 C:\Users\Robby\Jeremy_the_Chick\Jeremy_the_Chick_Project\obj\Debug\Assembly-CSharp.pdb
+C:\Users\Robby\Jeremy_the_Chick\Jeremy_the_Chick_Project\Temp\bin\Debug\UnityEditor.iOS.Extensions.Common.dll
+C:\Users\Robby\Jeremy_the_Chick\Jeremy_the_Chick_Project\Temp\bin\Debug\UnityEditor.iOS.Extensions.Xcode.dll
+C:\Users\Robby\Jeremy_the_Chick\Jeremy_the_Chick_Project\Temp\bin\Debug\UnityEditor.iOS.Extensions.Xcode.pdb
+C:\Users\Robby\Jeremy_the_Chick\Jeremy_the_Chick_Project\Temp\bin\Debug\UnityEditor.iOS.Extensions.Common.pdb
