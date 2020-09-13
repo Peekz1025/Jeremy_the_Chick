@@ -297,6 +297,7 @@ GameObject:
   - component: {fileID: 205153653}
   - component: {fileID: 205153652}
   - component: {fileID: 205153651}
+  - component: {fileID: 205153657}
   m_Layer: 5
   m_Name: Pause_Canvas
   m_TagString: Untagged
@@ -387,7 +388,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 1418591103
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &205153656
@@ -411,6 +412,17 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!210 &205153657
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205153650}
+  m_Enabled: 1
+  m_SortingLayerID: 1418591103
+  m_SortingLayer: -2
+  m_SortingOrder: 1
 --- !u!1 &216945027
 GameObject:
   m_ObjectHideFlags: 0
@@ -737,7 +749,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 623456001}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2061810446}
@@ -1012,6 +1024,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 696556151}
   m_CullTransparentMesh: 0
+--- !u!1 &881148342 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9031772929299503446, guid: b62f0f2cc6497a048b808ad854e79412,
+    type: 3}
+  m_PrefabInstance: {fileID: 9031772929129879239}
+  m_PrefabAsset: {fileID: 0}
+--- !u!210 &881148345
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 881148342}
+  m_Enabled: 1
+  m_SortingLayerID: 1418591103
+  m_SortingLayer: -2
+  m_SortingOrder: 2
 --- !u!1 &1061736752
 GameObject:
   m_ObjectHideFlags: 0
@@ -1425,6 +1454,7 @@ GameObject:
   - component: {fileID: 1224691754}
   - component: {fileID: 1224691753}
   - component: {fileID: 1224691757}
+  - component: {fileID: 1224691758}
   m_Layer: 5
   m_Name: Item Canvas
   m_TagString: Untagged
@@ -1483,13 +1513,13 @@ Canvas:
   m_RenderMode: 1
   m_Camera: {fileID: 1095261019}
   m_PlaneDistance: 100
-  m_PixelPerfect: 0
+  m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 1418591103
   m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &1224691756
@@ -1526,6 +1556,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 8717041412046344526, guid: d4280e1dfee072b41866cc8cb6d0cc29, type: 3}
   mainCamera: {fileID: 1095261019}
+--- !u!210 &1224691758
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224691752}
+  m_Enabled: 1
+  m_SortingLayerID: 1418591103
+  m_SortingLayer: -2
+  m_SortingOrder: 1
 --- !u!1 &1306730185
 GameObject:
   m_ObjectHideFlags: 0
@@ -1670,6 +1711,7 @@ GameObject:
   - component: {fileID: 1354177776}
   - component: {fileID: 1354177775}
   - component: {fileID: 1354177774}
+  - component: {fileID: 1354177780}
   m_Layer: 5
   m_Name: Game_Over_Canvas
   m_TagString: Untagged
@@ -1761,7 +1803,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 1418591103
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &1354177779
@@ -1784,6 +1826,17 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!210 &1354177780
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354177773}
+  m_Enabled: 1
+  m_SortingLayerID: 1418591103
+  m_SortingLayer: -2
+  m_SortingOrder: 1
 --- !u!1 &1363283406
 GameObject:
   m_ObjectHideFlags: 0
@@ -1794,7 +1847,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1363283408}
   - component: {fileID: 1363283407}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WorldBuilder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2515,6 +2568,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 9031772928069258652, guid: b62f0f2cc6497a048b808ad854e79412,
+        type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 9031772928337492649, guid: b62f0f2cc6497a048b808ad854e79412,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2579,6 +2637,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: TheJeremy
+      objectReference: {fileID: 0}
+    - target: {fileID: 9031772929299503446, guid: b62f0f2cc6497a048b808ad854e79412,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b62f0f2cc6497a048b808ad854e79412, type: 3}

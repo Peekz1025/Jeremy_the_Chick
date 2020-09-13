@@ -31,12 +31,14 @@ public class Spring : MonoBehaviour
         //tracks jeremy's current position
         jeremyPosition = Jeremy.transform.position;
 
-        if (jeremyPosition.x >= transform.position.x && jumped == false) //&& IsWithin(jeremyPosition.y, transform.position.y-1, transform.position.y+1) 
-        {            
-            jeremyScript.setVelocity(new Vector2(jeremyScript.velocity.x, jeremyScript.jumpVelocity * 2));
+        //if (jeremyPosition.x >= transform.position.x && jumped == false) //&& IsWithin(jeremyPosition.y, transform.position.y-1, transform.position.y+1) 
+        /*if (Jeremy. && jumped == false) //&& IsWithin(jeremyPosition.y, transform.position.y-1, transform.position.y+1) 
+
+        {
+                jeremyScript.setVelocity(new Vector2(jeremyScript.velocity.x, jeremyScript.jumpVelocity * 2));
             jeremyScript.state_grounded = false;
             jumped = true;
-        }
+        }*/
     }
 
     public bool IsWithin(float value, float minimum, float maximum)

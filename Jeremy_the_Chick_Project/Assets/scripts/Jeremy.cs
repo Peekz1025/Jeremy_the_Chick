@@ -40,6 +40,11 @@ public class Jeremy : Entity
 
         if(movementController.data.down.hit) state_grounded = true;
         else state_grounded = false;
+
+        //checks to see if it collided with a spring below it
+        if (movementController.data.down.hit && movementController.data.down.obj.Contains("spring")) // && state_grounded == true)
+            SpringJump();
+
     }
 
     private void LateUpdate()
@@ -80,5 +85,12 @@ public class Jeremy : Entity
                 break;
             }
         }
+    }
+
+    private void SpringJump()
+    {
+        //Debug.Log("i hit a spring");
+        setVelocity(new Vector2(velocity.x, jumpVelocity * 2));
+        state_grounded = false;
     }
 }

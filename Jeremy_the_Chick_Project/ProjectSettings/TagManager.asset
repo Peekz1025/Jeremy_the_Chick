@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - TheJeremy
+  - Spring
   layers:
   - Default
   - TransparentFX
@@ -14,7 +15,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - terrain
   - 
   - 
   - 
@@ -39,6 +40,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: UI
+    uniqueID: 1418591103
+    locked: 0
+  - name: Front
+    uniqueID: 1123162315
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

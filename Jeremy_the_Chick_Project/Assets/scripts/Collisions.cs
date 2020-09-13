@@ -8,8 +8,16 @@ public class Collisions : RaycastController
     public CollisionDataSum data;
 
     public LayerMask collisionMask;
-
     public int stepSize;
+
+    GameObject Jeremy;
+    Jeremy jeremyScript;
+
+    void Start()
+    {
+        Jeremy = GameObject.FindGameObjectWithTag("TheJeremy");
+        jeremyScript = Jeremy.GetComponent<Jeremy>();
+    }
 
     public struct CollisionDataSum
     {  
@@ -31,11 +39,13 @@ public class Collisions : RaycastController
     {
         public bool hit;
         public int layer;
+        public string obj;
 
         public void Reset()
         {
             layer = 0;
             hit = false;
+            obj = "";
         }
     }
 
@@ -94,6 +104,7 @@ public class Collisions : RaycastController
                 // Mark that this side of the collider hit a solid object
                 data.hit = true;
                 data.layer = hit.collider.gameObject.layer;
+                data.obj = hit.collider.gameObject.name;
 
                 // Record the remaining velocity
                 velocity = Mathf.Clamp((hit.distance - castOriginDepth), 0, float.MaxValue) * (float)(rayDirection.x + rayDirection.y);

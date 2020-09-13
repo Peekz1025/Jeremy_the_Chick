@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: -7341945073965531995}
   m_Layer: 0
   m_Name: spring
-  m_TagString: Untagged
+  m_TagString: Spring
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -157,7 +157,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4b00bc278ea7f741a3b6dc7a008f011, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Jeremy: {fileID: 5827184887264037993, guid: b62f0f2cc6497a048b808ad854e79412, type: 3}
 --- !u!114 &-7341945073965531995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,4 +169,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f984e20664240a4e934c69daeef398a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Jeremy: {fileID: 9031772928337492655, guid: b62f0f2cc6497a048b808ad854e79412, type: 3}

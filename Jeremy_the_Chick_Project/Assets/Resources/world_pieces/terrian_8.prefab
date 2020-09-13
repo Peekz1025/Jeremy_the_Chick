@@ -222,6 +222,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5064883936677313857}
   - component: {fileID: 1382131273585424447}
+  - component: {fileID: 3430953907535838496}
   m_Layer: 0
   m_Name: terrian_8
   m_TagString: Untagged
@@ -265,6 +266,17 @@ MonoBehaviour:
   rightAnchor: {fileID: 0}
   prev: {fileID: 0}
   next: {fileID: 0}
+--- !u!210 &3430953907535838496
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4258850852984321182}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &4541548687589224729
 GameObject:
   m_ObjectHideFlags: 0
