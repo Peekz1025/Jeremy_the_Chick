@@ -379,7 +379,7 @@ Canvas:
   m_GameObject: {fileID: 205153650}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 1095261019}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -1510,7 +1510,7 @@ Canvas:
   m_GameObject: {fileID: 1224691752}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 1095261019}
   m_PlaneDistance: 100
   m_PixelPerfect: 1
@@ -1794,7 +1794,7 @@ Canvas:
   m_GameObject: {fileID: 1354177773}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 1095261019}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -2576,7 +2576,7 @@ PrefabInstance:
     - target: {fileID: 9031772928337492649, guid: b62f0f2cc6497a048b808ad854e79412,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9031772928337492649, guid: b62f0f2cc6497a048b808ad854e79412,
         type: 3}
@@ -2628,6 +2628,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9031772928337492652, guid: b62f0f2cc6497a048b808ad854e79412,
+        type: 3}
+      propertyPath: gameOverUI
+      value: 
+      objectReference: {fileID: 1086193647}
+    - target: {fileID: 9031772928337492652, guid: b62f0f2cc6497a048b808ad854e79412,
+        type: 3}
+      propertyPath: pauseButton
+      value: 
+      objectReference: {fileID: 232537946}
     - target: {fileID: 9031772928337492655, guid: b62f0f2cc6497a048b808ad854e79412,
         type: 3}
       propertyPath: m_Name

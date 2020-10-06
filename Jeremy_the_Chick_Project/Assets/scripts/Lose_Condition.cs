@@ -16,7 +16,7 @@ public class Lose_Condition : MonoBehaviour
         if (jeremyPrefab.transform.position.y < -10)
         {
             //if (isGameOver == false) //causes error, idk why
-            GameOver();
+            //GameOver();
         }
     }
 

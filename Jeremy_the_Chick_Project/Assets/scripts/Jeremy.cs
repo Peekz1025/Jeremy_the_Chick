@@ -11,9 +11,13 @@ public class Jeremy : Entity
 
     // LOCAL DATA
     private bool right = true;
-
     public bool state_grounded = true;
 
+    // LOSE CONDITION
+    Vector2 startFallingPos;
+    bool startFallingPosTracked = false;
+    public GameObject gameOverUI;
+    public GameObject pauseButton;
 
 
     // Start is called before the first frame update
@@ -36,7 +40,12 @@ public class Jeremy : Entity
             if(movementController.data.left.hit) right = true;
         }
 
-        if(state_grounded) checkObstacle();
+        if (state_grounded)
+        {
+            checkObstacle();
+            startFallingPos = new Vector2();
+            startFallingPosTracked = false;
+        }
 
         if(movementController.data.down.hit) state_grounded = true;
         else state_grounded = false;
@@ -44,6 +53,20 @@ public class Jeremy : Entity
         //checks to see if it collided with a spring below it
         if (movementController.data.down.hit && movementController.data.down.obj.Contains("spring")) // && state_grounded == true)
             SpringJump();
+
+
+        if(transform.position.y <= startFallingPos.y - 10)
+        {
+            GameOver();
+        }
+
+        if (!state_grounded && !startFallingPosTracked)
+        {
+            startFallingPos = transform.position;
+            startFallingPosTracked = true;
+        }
+
+
 
     }
 
@@ -92,5 +115,12 @@ public class Jeremy : Entity
         //Debug.Log("i hit a spring");
         setVelocity(new Vector2(velocity.x, jumpVelocity * 2));
         state_grounded = false;
+    }
+
+    void GameOver()
+    {
+        gameOverUI.SetActive(true);
+        pauseButton.SetActive(false);
+        Time.timeScale = 0f;
     }
 }
