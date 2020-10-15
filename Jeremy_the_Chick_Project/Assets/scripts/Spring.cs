@@ -4,18 +4,9 @@ using UnityEngine;
 
 public class Spring : MonoBehaviour
 {
-    /*NOTES
-     * he can currently only use a spring once bc it detects when hes greater than it.  could put a wait on turning jumped back to false
-     * 
-     * the y doesnt matter so he can jump off a spring if hes already in the air.  maybe check the y pos isWithin the pos of the spring and/or check if grounded == true
-     *  - checking if grounded is true only delays the jump
-     */
-
-
     GameObject Jeremy;
     Jeremy jeremyScript;
     Vector3 jeremyPosition;
-    bool jumped = false;
 
     // Start is called before the first frame update
     void Start()
@@ -41,8 +32,4 @@ public class Spring : MonoBehaviour
         }*/
     }
 
-    public bool IsWithin(float value, float minimum, float maximum)
-    {
-        return value >= minimum && value <= maximum;
-    }
 }

@@ -201,7 +201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07dd8f2351118d74e94d97a54fc28539, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 2827923380426287235, guid: 817bc8a49f9055b45b6232323d0f9187, type: 3}
+  prefab: {fileID: 152813365596052829, guid: 68ff6858d4b0ce54c8f85175749c9be7, type: 3}
   mainCamera: {fileID: 1095261019}
 --- !u!114 &204928039
 MonoBehaviour:
@@ -1867,7 +1867,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelSize: 16
-  startPoint: {x: -5, y: -4.5, z: 0}
+  buildPoint: {x: 0, y: 0, z: 0}
 --- !u!4 &1363283408
 Transform:
   m_ObjectHideFlags: 0
@@ -2576,12 +2576,12 @@ PrefabInstance:
     - target: {fileID: 9031772928337492649, guid: b62f0f2cc6497a048b808ad854e79412,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9031772928337492649, guid: b62f0f2cc6497a048b808ad854e79412,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9031772928337492649, guid: b62f0f2cc6497a048b808ad854e79412,
         type: 3}

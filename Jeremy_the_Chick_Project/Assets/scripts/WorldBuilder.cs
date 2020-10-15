@@ -5,15 +5,34 @@ using UnityEngine;
 public class WorldBuilder : MonoBehaviour
 {
     public int levelSize;
-    public Vector3 startPoint;
+    public Vector3 buildPoint;
     private GameObject[] pieces;
+
+    //track jeremy postiton
+    GameObject Jeremy;
+    Vector3 jeremyPosition;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        Jeremy = GameObject.FindGameObjectWithTag("TheJeremy");
+        jeremyPosition = Jeremy.transform.position;
+
         pieces = Resources.LoadAll<GameObject>("world_pieces/");
-        firstBuild(levelSize, startPoint);
+        firstBuild(levelSize, buildPoint);
+    }
+
+    void Update()
+    {
+        //track jeremy's current position
+        jeremyPosition = Jeremy.transform.position;
+
+        //if jeremy is close and its not the first spawn
+        if (jeremyPosition.x >= buildPoint.x - 20 && buildPoint.x != -2)
+        {
+            buildWorld(levelSize, buildPoint);
+        }
     }
 
     private void buildWorld(int size, Vector2 start)
@@ -27,12 +46,32 @@ public class WorldBuilder : MonoBehaviour
                 piece.prev = prev;
                 prev.next = piece;
                 piece.attachToAnchor(prev.rightAnchor.position);
+                buildPoint = piece.rightAnchor.position;
             }
             else
             {
-                piece.attachToAnchor(startPoint);
+                piece.attachToAnchor(start);
             }
 
+            prev = piece;
+        }
+    }
+
+    private void firstBuild(int size, Vector2 start)
+    {
+        GameObject first = pieces[0];
+        WorldPiece firstPiece = GameObject.Instantiate(first).GetComponent<WorldPiece>();
+        firstPiece.attachToAnchor(start);
+
+        WorldPiece prev = firstPiece;
+        for (int i = 0; i != size; i++)
+        {
+            GameObject go = getRandomPiece();
+            WorldPiece piece = GameObject.Instantiate(go).GetComponent<WorldPiece>();
+            piece.prev = prev;
+            prev.next = piece;
+            piece.attachToAnchor(prev.rightAnchor.position);
+            buildPoint = piece.rightAnchor.position;
             prev = piece;
         }
     }
@@ -44,39 +83,4 @@ public class WorldBuilder : MonoBehaviour
         return pieces[id];
     }
 
-
-    private void firstBuild(int size, Vector2 start)
-    {
-        GameObject first = pieces[0];
-        WorldPiece firstPiece = GameObject.Instantiate(first).GetComponent<WorldPiece>();
-        firstPiece.attachToAnchor(startPoint);
-
-        WorldPiece prev = firstPiece;
-        for (int i = 0; i != size; i++)
-        {
-            GameObject go = getRandomPiece();
-            WorldPiece piece = GameObject.Instantiate(go).GetComponent<WorldPiece>();
-            piece.prev = prev;
-            prev.next = piece;
-            piece.attachToAnchor(prev.rightAnchor.position);
-            prev = piece;
-        }
-    }
-
-
-
 }
-
-/*
-could we check the name of the prefab?
-have variables if it is up or down. cant go more than 1 up or 1 down
-have the flat peice more common than the others so its no so hectic to start
-have a defined satrting piece
-    
-have the update fucntion check if jeremy is within a certain number of pieces to the edge, if so run the build function and reset the var
-
-     
-     
-*/
-
-

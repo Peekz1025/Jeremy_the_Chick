@@ -4,8 +4,6 @@ using System.Collections;
 
 public class SceneChanger : MonoBehaviour
 {
-
-
     public void LoadGame()
     {
         SceneManager.LoadScene("game");
