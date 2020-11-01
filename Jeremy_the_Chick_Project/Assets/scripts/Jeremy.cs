@@ -43,7 +43,7 @@ public class Jeremy : Entity
         if (state_grounded)
         {
             checkObstacle();
-            startFallingPos = new Vector2();
+            startFallingPos = new Vector2(-100,-100);
             startFallingPosTracked = false;
         }
 
@@ -55,10 +55,7 @@ public class Jeremy : Entity
             SpringJump();
 
 
-        if(transform.position.y <= startFallingPos.y - 10)
-        {
-            GameOver();
-        }
+
 
         if (!state_grounded && !startFallingPosTracked)
         {
@@ -66,6 +63,10 @@ public class Jeremy : Entity
             startFallingPosTracked = true;
         }
 
+        if (transform.position.y <= startFallingPos.y - 10)
+        {
+            GameOver();
+        }
 
 
     }
