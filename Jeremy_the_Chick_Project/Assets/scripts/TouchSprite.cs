@@ -63,16 +63,6 @@ public class TouchSprite : MonoBehaviour
         }
     }
 
-
-
-
-
-
-
-
-
-
-
     public void MouseInput(Collider2D collider)
     {
         //if (Input.GetMouseButtonDown())

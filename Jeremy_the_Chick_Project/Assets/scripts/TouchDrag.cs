@@ -4,7 +4,14 @@ using UnityEngine;
 
 public class TouchDrag : TouchSprite
 {
-    private bool isDragging = false;
+    private bool isDragging = true;
+    BoxCollider2D myHitbox;
+
+    private void Awake()
+    {
+        myHitbox = GetComponent<BoxCollider2D>();
+        myHitbox.enabled = false;
+    }
 
     // Update is called once per frame
     void Update()
@@ -15,6 +22,12 @@ public class TouchDrag : TouchSprite
         {
             Vector3 pos = new Vector3(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, Camera.main.ScreenToWorldPoint(Input.mousePosition).y, transform.position.z) - transform.position;
             transform.Translate(pos);
+
+            if(!Input.GetMouseButton(0))
+            {
+                isDragging = false;
+                myHitbox.enabled = true;
+            }
         }
     }
 
@@ -31,11 +44,6 @@ public class TouchDrag : TouchSprite
     private void OnMouseDown()
     {
         isDragging = true;
+        myHitbox.enabled = false;
     }
-
-    private void OnMouseUp()
-    {
-        isDragging = false;
-    }
-
 }
