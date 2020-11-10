@@ -675,7 +675,7 @@ RectTransform:
   m_GameObject: {fileID: 445373651}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 204928036}
   m_RootOrder: 0
@@ -704,7 +704,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2bbaa5ae8744de4458cb6e6bf5807bcf, type: 3}
+  m_Sprite: {fileID: 21300038, guid: 4b00c4fcb1be91245b2dab5149c61c5d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1996,6 +1996,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1363283408}
   - component: {fileID: 1363283407}
+  - component: {fileID: 1363283409}
   m_Layer: 8
   m_Name: WorldBuilder
   m_TagString: Untagged
@@ -2031,6 +2032,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1363283409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1363283406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87e46294d101b9f4ab91f65357c2e503, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelSize: 4
+  buildPoint: {x: 0, y: 0, z: 0}
 --- !u!1 &1364012136 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9031772928337492655, guid: b62f0f2cc6497a048b808ad854e79412,
