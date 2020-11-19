@@ -12,7 +12,6 @@ public class WorldBuilder : MonoBehaviour
     GameObject Jeremy;
     Vector3 jeremyPosition;
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +20,8 @@ public class WorldBuilder : MonoBehaviour
 
         pieces = Resources.LoadAll<GameObject>("world_pieces/");
         firstBuild(levelSize, buildPoint);
+
+
     }
 
     void Update()

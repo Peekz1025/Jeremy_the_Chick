@@ -6,6 +6,7 @@ TagManager:
   tags:
   - TheJeremy
   - Spring
+  - Scenery
   layers:
   - Default
   - TransparentFX
@@ -17,7 +18,7 @@ TagManager:
   - 
   - terrain
   - sky
-  - 
+  - background_details
   - 
   - 
   - 
