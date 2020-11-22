@@ -20,4 +20,9 @@ public class SceneChanger : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1f;
     }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
 }

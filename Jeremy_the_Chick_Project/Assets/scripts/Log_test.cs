@@ -5,30 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class Log_test : MonoBehaviour
 {
-
-    public GameObject text;
-    public GameObject jeremy;
-
-
-    // Update is called once per frame
-    void Update()
-    {
-        //Debug.Log("the game is running");
-        //Debug.Log(Time.timeScale);
-
-        //text.GetComponent<UnityEngine.UI.Text>().text = Time.timeScale.ToString();
-
-        //Debug.Log(jeremy.GetComponent<Jeremy>().jumpVelocity);
-
-
-    }
-
     public void SetTime()
     {
         Time.timeScale = 1f;
     }
-
-
+    
     void OnEnable()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;

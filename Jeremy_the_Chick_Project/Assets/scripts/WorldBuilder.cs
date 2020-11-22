@@ -20,8 +20,6 @@ public class WorldBuilder : MonoBehaviour
 
         pieces = Resources.LoadAll<GameObject>("world_pieces/");
         firstBuild(levelSize, buildPoint);
-
-
     }
 
     void Update()
@@ -53,7 +51,6 @@ public class WorldBuilder : MonoBehaviour
             {
                 piece.attachToAnchor(start);
             }
-
             prev = piece;
         }
     }
@@ -80,7 +77,6 @@ public class WorldBuilder : MonoBehaviour
     private GameObject getRandomPiece()
     {
         int id = Random.Range(1, pieces.Length);
-
         return pieces[id];
     }
 
