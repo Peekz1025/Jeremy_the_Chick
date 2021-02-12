@@ -7,6 +7,7 @@ TagManager:
   - TheJeremy
   - Spring
   - Scenery
+  - DragParticles
   layers:
   - Default
   - TransparentFX

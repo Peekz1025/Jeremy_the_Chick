@@ -6,18 +6,21 @@ public class TouchDrag : TouchSprite
 {
     private bool isDragging = true;
     BoxCollider2D myHitbox;
+    Rigidbody2D myRigid;
 
     private void Awake()
     {
         myHitbox = GetComponent<BoxCollider2D>();
         myHitbox.enabled = false;
+
+        myRigid = GetComponent<Rigidbody2D>();
+        myRigid.angularVelocity = 0;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        //TouchInput(GetComponent<BoxCollider2D>());
-
         if (isDragging)
         {
             Vector3 pos = new Vector3(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, Camera.main.ScreenToWorldPoint(Input.mousePosition).y, transform.position.z) - transform.position;
@@ -27,23 +30,26 @@ public class TouchDrag : TouchSprite
             {
                 isDragging = false;
                 myHitbox.enabled = true;
+                myRigid.gravityScale = 1.5f;
             }
+            myRigid.angularVelocity = 0;
         }
+        else
+        {
+            myHitbox.enabled = true;
+            myRigid.gravityScale = 1.5f;
+        }
+
+        //Debug.Log(myRigid.angularVelocity);
     }
-
-    void OnFirstTouch()
-    {
-        //Vector3 pos = new Vector3(Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position).x, Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position).y, transform.position.z);
-        //transform.position = pos;
-
-        //Vector3 pos = new Vector3(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, Camera.main.ScreenToWorldPoint(Input.mousePosition).y, transform.position.z) - transform.position;
-        //transform.Translate(pos);
-    }
-
 
     private void OnMouseDown()
     {
         isDragging = true;
         myHitbox.enabled = false;
+        myRigid.gravityScale = 0;
+        myRigid.angularVelocity = 0;
     }
+
+
 }

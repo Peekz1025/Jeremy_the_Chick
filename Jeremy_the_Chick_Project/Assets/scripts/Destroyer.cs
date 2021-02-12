@@ -23,7 +23,7 @@ public class Destroyer : MonoBehaviour
         jeremyPosition = Jeremy.transform.position;
 
         //if the object goes too far offscreen, destroy it
-        if (transform.position.x <= jeremyPosition.x - 15 && isAlive == true)
+        if ((transform.position.x <= jeremyPosition.x - 20 && isAlive == true) || (transform.position.y <= jeremyPosition.y - 20 && isAlive == true) || (transform.position.y >= jeremyPosition.y + 20 && isAlive == true))
         {
             isAlive = false;
             Destroy(this.gameObject);

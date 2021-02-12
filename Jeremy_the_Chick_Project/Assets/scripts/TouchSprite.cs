@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TouchSprite : MonoBehaviour
 {
+    
     public static bool guiTouch = false;
 
     public void TouchInput(Collider2D collider)
@@ -119,8 +120,6 @@ public class TouchSprite : MonoBehaviour
             }
         //}
     }
-
-
 
 
 }

@@ -8,7 +8,6 @@ public class Jeremy : Entity
     public float jumpReactDistance = 0.75f; // Distance from an obstacle at which Jeremy jumps.
     public float jumpVelocity = 8f; // Upward velocity Jeremy gains when he jumps.
 
-
     // LOCAL DATA
     private bool right = true;
     public bool state_grounded = true;
@@ -18,6 +17,9 @@ public class Jeremy : Entity
     bool startFallingPosTracked = false;
     public GameObject gameOverUI;
     public GameObject pauseButton;
+
+    // PARTICLE EFFECTS
+    public ParticleSystem dust;
 
 
     // Start is called before the first frame update
@@ -47,28 +49,31 @@ public class Jeremy : Entity
             startFallingPosTracked = false;
         }
 
-        if(movementController.data.down.hit) state_grounded = true;
-        else state_grounded = false;
+        if (movementController.data.down.hit)
+        {
+            state_grounded = true;
+        }
+        else
+        {
+            state_grounded = false;
+        }
 
         //checks to see if it collided with a spring below it
-        if (movementController.data.down.hit && movementController.data.down.obj.Contains("spring")) // && state_grounded == true)
+        if (movementController.data.down.hit && movementController.data.down.obj.Contains("Spring"))
             SpringJump();
 
-
-
-
+        // begins to track falling position for gameover
         if (!state_grounded && !startFallingPosTracked)
         {
             startFallingPos = transform.position;
             startFallingPosTracked = true;
         }
 
+        // checks if he's been falling for 10 units
         if (transform.position.y <= startFallingPos.y - 10)
         {
             GameOver();
         }
-
-
     }
 
     private void LateUpdate()
@@ -101,8 +106,10 @@ public class Jeremy : Entity
             RaycastHit2D hit = Physics2D.Raycast(rayOrigin + (raySpacing * i), rayDirection, rayLength, movementController.collisionMask);
             Debug.DrawRay(rayOrigin + (raySpacing * i), rayDirection*rayLength, Color.red);
 
+            // put code here for if the object hits from above
             if(hit)
             {
+                CreateDust();
                 setVelocity(new Vector2(velocity.x, jumpVelocity));
 
                 state_grounded = false;
@@ -114,6 +121,7 @@ public class Jeremy : Entity
     private void SpringJump()
     {
         //Debug.Log("i hit a spring");
+        CreateDust();
         setVelocity(new Vector2(velocity.x, jumpVelocity * 2));
         state_grounded = false;
     }
@@ -123,5 +131,10 @@ public class Jeremy : Entity
         gameOverUI.SetActive(true);
         pauseButton.SetActive(false);
         Time.timeScale = 0f;
+    }
+
+    void CreateDust()
+    {
+        dust.Play();
     }
 }
