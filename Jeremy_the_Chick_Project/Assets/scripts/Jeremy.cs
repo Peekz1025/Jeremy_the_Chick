@@ -34,12 +34,20 @@ public class Jeremy : Entity
         if(right)
         {
             setVelocity(new Vector2(2, velocity.y));
-            if(movementController.data.right.hit) right = false;
+            if (movementController.data.right.hit)
+            {
+                right = false;
+                this.GetComponent<SpriteRenderer>().flipX = true;
+            }
         }
         else
         {
             setVelocity(new Vector2(-2, velocity.y));
-            if(movementController.data.left.hit) right = true;
+            if (movementController.data.left.hit)
+            {
+                right = true;
+                this.GetComponent<SpriteRenderer>().flipX = false;
+            }
         }
 
         if (state_grounded)
