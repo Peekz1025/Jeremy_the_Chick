@@ -12,15 +12,8 @@ public class Jeremy : Entity
     private bool right = true;
     public bool state_grounded = true;
 
-    // LOSE CONDITION
-    Vector2 startFallingPos;
-    bool startFallingPosTracked = false;
-    public GameObject gameOverUI;
-    public GameObject pauseButton;
-
     // PARTICLE EFFECTS
     public ParticleSystem dust;
-
 
     // Start is called before the first frame update
     void Awake()
@@ -53,8 +46,6 @@ public class Jeremy : Entity
         if (state_grounded)
         {
             checkObstacle();
-            startFallingPos = new Vector2(-100,-100);
-            startFallingPosTracked = false;
         }
 
         if (movementController.data.down.hit)
@@ -68,19 +59,8 @@ public class Jeremy : Entity
 
         //checks to see if it collided with a spring below it
         if (movementController.data.down.hit && movementController.data.down.obj.Contains("Spring"))
+        {
             SpringJump();
-
-        // begins to track falling position for gameover
-        if (!state_grounded && !startFallingPosTracked)
-        {
-            startFallingPos = transform.position;
-            startFallingPosTracked = true;
-        }
-
-        // checks if he's been falling for 10 units
-        if (transform.position.y <= startFallingPos.y - 10)
-        {
-            GameOver();
         }
     }
 
@@ -134,15 +114,10 @@ public class Jeremy : Entity
         state_grounded = false;
     }
 
-    void GameOver()
-    {
-        gameOverUI.SetActive(true);
-        pauseButton.SetActive(false);
-        Time.timeScale = 0f;
-    }
-
     void CreateDust()
     {
         dust.Play();
     }
 }
+
+

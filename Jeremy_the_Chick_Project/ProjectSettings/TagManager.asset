@@ -8,6 +8,7 @@ TagManager:
   - Spring
   - Scenery
   - DragParticles
+  - WorldBuilder
   layers:
   - Default
   - TransparentFX

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Collisions : RaycastController
+public class Collisions : Raycast_Controller
 {
     private BoxCollider2D hitBox;
     public CollisionDataSum data;
