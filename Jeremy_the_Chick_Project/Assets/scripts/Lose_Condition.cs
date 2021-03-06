@@ -14,6 +14,7 @@ public class Lose_Condition : MonoBehaviour
 
     public GameObject gameOverUI;
     public GameObject pauseButton;
+    public GameObject itemCanvas;
 
     void Start()
     {
@@ -61,6 +62,7 @@ public class Lose_Condition : MonoBehaviour
     {
         gameOverUI.SetActive(true);
         pauseButton.SetActive(false);
+        itemCanvas.SetActive(false);
         Time.timeScale = 0f;
     }
 }

@@ -23,6 +23,7 @@ public class Spawner : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             Vector3 touchPosition = mainCamera.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1f));
+            //touchPosition.z = -1;
             Instantiate(prefab, touchPosition, Quaternion.identity);
         }
 

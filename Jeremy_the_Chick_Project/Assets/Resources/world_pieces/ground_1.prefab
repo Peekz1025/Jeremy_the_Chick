@@ -1991,6 +1991,11 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 7646033600776165038, guid: 527ad796cbabc3249b40ec4c30fdfeeb,
+        type: 3}
+      propertyPath: m_UsedByComposite
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7646033600776165039, guid: 527ad796cbabc3249b40ec4c30fdfeeb,
         type: 3}
       propertyPath: m_Tiles.Array.size

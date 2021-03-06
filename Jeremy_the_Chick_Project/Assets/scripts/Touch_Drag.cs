@@ -4,18 +4,21 @@ using UnityEngine;
 
 public class Touch_Drag : Touch_Sprite
 {
-    private bool isDragging = true;
+    GameObject pauseButton;
+    public bool isDragging = true;
     BoxCollider2D myHitbox;
     Rigidbody2D myRigid;
 
+
     private void Awake()
     {
+        pauseButton = GameObject.FindGameObjectWithTag("PauseButton");
+
         myHitbox = GetComponent<BoxCollider2D>();
         myHitbox.enabled = false;
 
         myRigid = GetComponent<Rigidbody2D>();
         myRigid.angularVelocity = 0;
-
     }
 
     // Update is called once per frame
@@ -39,16 +42,18 @@ public class Touch_Drag : Touch_Sprite
             myHitbox.enabled = true;
             myRigid.gravityScale = 1.5f;
         }
-
-        //Debug.Log(myRigid.angularVelocity);
     }
 
     private void OnMouseDown()
     {
-        isDragging = true;
-        myHitbox.enabled = false;
-        myRigid.gravityScale = 0;
-        myRigid.angularVelocity = 0;
+        if (pauseButton.activeSelf == true)
+        {
+            isDragging = true;
+            myHitbox.enabled = false;
+            myRigid.gravityScale = 0;
+            myRigid.angularVelocity = 0;
+            this.transform.rotation = new Quaternion(0,0,0,0);
+        }
     }
 
 

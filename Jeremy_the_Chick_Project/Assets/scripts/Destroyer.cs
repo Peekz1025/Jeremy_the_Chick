@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class Destroyer : MonoBehaviour
 {
-
     GameObject Jeremy;
-    bool isAlive = true;
     Vector3 jeremyPosition;
+    bool isAlive = true;
 
     // Start is called before the first frame update
     void Start()
@@ -30,3 +29,4 @@ public class Destroyer : MonoBehaviour
         }
     }
 }
+

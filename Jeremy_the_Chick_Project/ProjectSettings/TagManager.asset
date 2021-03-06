@@ -9,6 +9,11 @@ TagManager:
   - Scenery
   - DragParticles
   - WorldBuilder
+  - TheTrashBin
+  - Rock
+  - Log
+  - PausePanel
+  - PauseButton
   layers:
   - Default
   - TransparentFX
