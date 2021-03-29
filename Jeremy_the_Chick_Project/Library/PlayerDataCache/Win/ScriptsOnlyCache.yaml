@@ -1,21 +1,25 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - ClearTrash
     - Collisions
     - Destroyer
+    - Distance_Tracker
+    - Egg_Collection
+    - Egg_Spawner
     - Gravity
     - Jeremy
     - Log_test
     - Lose_Condition
     - Parallax
-    - PauseMenu
-    - SceneChanger
-    - SkyBuilder
+    - Particle_Destory
+    - Pause_Menu
+    - Scene_Changer
+    - Sky_Builder
     - Spawner
-    - Spring
-    - TouchDrag
-    - WorldBuilder
-    - WorldPiece
+    - Touch_Drag
+    - World_Builder
+    - World_Piece
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Tilemap.Editor.dll:
@@ -31,6 +35,12 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.TileDragAndDropManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -63,7 +73,13 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -72,45 +88,53 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11190}
     - Class: 114
-      Script: {instanceID: 11460}
+      Script: {instanceID: 11454}
     - Class: 114
-      Script: {instanceID: 11514}
+      Script: {instanceID: 11462}
     - Class: 114
-      Script: {instanceID: 11528}
+      Script: {instanceID: 11516}
     - Class: 114
-      Script: {instanceID: 11712}
+      Script: {instanceID: 11530}
     - Class: 114
-      Script: {instanceID: 11792}
+      Script: {instanceID: 11568}
     - Class: 114
-      Script: {instanceID: 12060}
+      Script: {instanceID: 11794}
     - Class: 114
-      Script: {instanceID: 12110}
+      Script: {instanceID: 11804}
     - Class: 114
-      Script: {instanceID: 12182}
+      Script: {instanceID: 12064}
     - Class: 114
-      Script: {instanceID: 12284}
+      Script: {instanceID: 12088}
     - Class: 114
-      Script: {instanceID: 12548}
+      Script: {instanceID: 12116}
     - Class: 114
-      Script: {instanceID: 12890}
+      Script: {instanceID: 12188}
     - Class: 114
-      Script: {instanceID: 12952}
+      Script: {instanceID: 12290}
     - Class: 114
-      Script: {instanceID: 13006}
+      Script: {instanceID: 12578}
     - Class: 114
-      Script: {instanceID: 13264}
+      Script: {instanceID: 12896}
     - Class: 114
-      Script: {instanceID: 13652}
+      Script: {instanceID: 12958}
     - Class: 114
-      Script: {instanceID: 13712}
+      Script: {instanceID: 13012}
     - Class: 114
-      Script: {instanceID: 13744}
+      Script: {instanceID: 13188}
     - Class: 114
-      Script: {instanceID: 14198}
+      Script: {instanceID: 13272}
     - Class: 114
-      Script: {instanceID: 14268}
+      Script: {instanceID: 13660}
     - Class: 114
-      Script: {instanceID: 14354}
+      Script: {instanceID: 13720}
+    - Class: 114
+      Script: {instanceID: 13752}
+    - Class: 114
+      Script: {instanceID: 14206}
+    - Class: 114
+      Script: {instanceID: 14276}
+    - Class: 114
+      Script: {instanceID: 14362}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -118,6 +142,10 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 210
       Script: {instanceID: 0}
@@ -130,6 +158,8 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 1839735485
       Script: {instanceID: 0}
     Assets/Scenes/home.unity:
     - Class: 1
@@ -144,7 +174,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
     - Class: 61
+      Script: {instanceID: 0}
+    - Class: 66
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
@@ -155,25 +189,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11170}
     - Class: 114
-      Script: {instanceID: 11460}
+      Script: {instanceID: 11462}
     - Class: 114
-      Script: {instanceID: 11514}
+      Script: {instanceID: 11516}
     - Class: 114
-      Script: {instanceID: 12060}
+      Script: {instanceID: 12064}
     - Class: 114
-      Script: {instanceID: 12182}
+      Script: {instanceID: 12188}
     - Class: 114
-      Script: {instanceID: 12304}
+      Script: {instanceID: 12310}
     - Class: 114
-      Script: {instanceID: 12622}
+      Script: {instanceID: 12628}
     - Class: 114
-      Script: {instanceID: 12890}
+      Script: {instanceID: 12896}
     - Class: 114
-      Script: {instanceID: 13652}
+      Script: {instanceID: 13660}
     - Class: 114
-      Script: {instanceID: 13744}
+      Script: {instanceID: 13752}
     - Class: 114
-      Script: {instanceID: 14268}
+      Script: {instanceID: 14276}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -191,6 +225,8 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 19719996
       Script: {instanceID: 0}
     - Class: 156049354
       Script: {instanceID: 0}
@@ -255,6 +291,12 @@ ScriptsOnlyBuild:
     className: ActivationTrack
   - hash:
       serializedVersion: 2
+      Hash: 3b8038c3392a12b7521cc1a169adf79c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ClearTrash
+  - hash:
+      serializedVersion: 2
       Hash: aeb62f729c52c814dec86c47dcac1471
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -285,10 +327,10 @@ ScriptsOnlyBuild:
     className: Image
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: e89b9d4af2447e1735b1ba3367e78289
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: TouchDrag
+    className: Touch_Drag
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -301,6 +343,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.SpriteShape.Runtime.dll
     namespaceName: UnityEngine.U2D
     className: SpriteShapeController
+  - hash:
+      serializedVersion: 2
+      Hash: 0dd53543ce0313039ed86ce8f5ab3511
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Distance_Tracker
   - hash:
       serializedVersion: 2
       Hash: 234235b9fb07320d11497e08a726cc56
@@ -333,12 +381,6 @@ ScriptsOnlyBuild:
     className: LayoutElement
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Spring
-  - hash:
-      serializedVersion: 2
       Hash: 18c222bef9ae745ce69ddde9b74337ca
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -355,6 +397,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Spawner
+  - hash:
+      serializedVersion: 2
+      Hash: e70de7605824c81ac8fdb3772beafe41
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Egg_Collection
   - hash:
       serializedVersion: 2
       Hash: cf9f5cf2c3145a37ac07f00e50e460f9
@@ -411,10 +459,16 @@ ScriptsOnlyBuild:
     className: Shadow
   - hash:
       serializedVersion: 2
+      Hash: 2c616aa8654fe6ee00cbc9368fc95608
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Lose_Condition
+  - hash:
+      serializedVersion: 2
       Hash: b13d6c62f36e2d124e8130beb5f5410f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: SkyBuilder
+    className: Sky_Builder
   - hash:
       serializedVersion: 2
       Hash: cc4274b586df3c02688bac01b88bd16c
@@ -450,7 +504,7 @@ ScriptsOnlyBuild:
       Hash: 1e1e8fec6b97cdca4797181e6abf774d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: RaycastController
+    className: Raycast_Controller
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -465,10 +519,10 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: a79a3b31305c8f6f4d8a8098c0c8af7d
+      Hash: c651e3d65b6186b694c25a339f5af95a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: PauseMenu
+    className: Pause_Menu
   - hash:
       serializedVersion: 2
       Hash: 64eca5be1150c507fe3317911a42f856
@@ -489,10 +543,10 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
-      Hash: 2b6ca4ea4ead08c7af1061969b0f65c2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Lose_Condition
+    className: Particle_Destory
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -501,10 +555,10 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
-      Hash: 3f0273c161c9251c5b2614c0b8b37618
+      Hash: 2e5e2cef35b5d4b4c2384f4de5aadc93
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: WorldPiece
+    className: World_Piece
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -549,7 +603,7 @@ ScriptsOnlyBuild:
     className: Collisions
   - hash:
       serializedVersion: 2
-      Hash: efc86fcf5eba87836bfc89c39492f9f2
+      Hash: a2e06eab2140ea64a0f841ccdc28c977
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Jeremy
@@ -565,6 +619,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.Animation.Runtime.dll
     namespaceName: UnityEngine.U2D.Animation
     className: SpriteSkin
+  - hash:
+      serializedVersion: 2
+      Hash: 4bd69c495d001beda5333e00c7026db0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Egg_Spawner
   - hash:
       serializedVersion: 2
       Hash: 783f593b9380cf72d0f7ebfd4a0d4bcd
@@ -615,10 +675,10 @@ ScriptsOnlyBuild:
     className: Physics2DRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 31228ba9b04e4dda7ca74d61c7a3d0c3
+      Hash: 13c77b4d14e0ab09ae1d0866fc9d4c24
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: WorldBuilder
+    className: World_Builder
   - hash:
       serializedVersion: 2
       Hash: c1933cc0a2f4ff6eb13333347497beb3
@@ -660,7 +720,7 @@ ScriptsOnlyBuild:
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: SceneChanger
+    className: Scene_Changer
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -780,7 +840,7 @@ ScriptsOnlyBuild:
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: TouchSprite
+    className: Touch_Sprite
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -791,4 +851,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/home.unity
   - Assets/Scenes/game.unity
-  playerPath: C:/Users/Robby/Desktop/build tests/Jeremy_the_Chick_Project.exe
+  playerPath: C:/Users/Robby/Desktop/Jeremy 2.0/Jeremy_the_Chick_Project.exe

@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class World_Builder : MonoBehaviour
 {
-    int levelSize = 3;
+    public int levelSize = 2;
     public Vector3 buildPoint;
     private GameObject[] pieces;
     public List<GameObject> currentWorld;
     int worldTracker;
+
+    Egg_Spawner eggSpawnerScript;
 
     //track jeremy postiton
     GameObject Jeremy;
@@ -25,6 +27,9 @@ public class World_Builder : MonoBehaviour
 
         pieces = Resources.LoadAll<GameObject>("world_pieces/");
         FirstBuild(levelSize, buildPoint);
+
+        eggSpawnerScript = this.GetComponent<Egg_Spawner>();
+
     }
 
     void Update()
@@ -70,7 +75,7 @@ public class World_Builder : MonoBehaviour
     private void BuildWorld(int size, Vector2 start)
     {
         World_Piece prev = null;
-        for (int i = 0; i != size; i++)
+        for (int i = 0; i < size; i++)
         {
             GameObject go = GetRandomPiece();
             World_Piece piece = GameObject.Instantiate(go).GetComponent<World_Piece>();
@@ -87,6 +92,10 @@ public class World_Builder : MonoBehaviour
             }
             prev = piece;
             currentWorld.Add(piece.gameObject);
+
+            // spawn eggs
+            eggSpawnerScript.SpawnEggs(piece);
+
         }
     }
     

@@ -10,6 +10,7 @@ public class Pause_Menu : MonoBehaviour
     public GameObject pauseButton;
     public GameObject itemCanvas;
 
+
     public void PauseGame()
     {
         pauseMenuUI.SetActive(true);

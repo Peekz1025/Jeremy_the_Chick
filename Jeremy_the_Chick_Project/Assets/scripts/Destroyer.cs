@@ -8,14 +8,12 @@ public class Destroyer : MonoBehaviour
     Vector3 jeremyPosition;
     bool isAlive = true;
 
-    // Start is called before the first frame update
     void Start()
     {
         Jeremy = GameObject.FindGameObjectWithTag("TheJeremy");
         jeremyPosition = Jeremy.transform.position;
     }
 
-    // Update is called once per frame
     void Update()
     {
         //track jeremy's current position

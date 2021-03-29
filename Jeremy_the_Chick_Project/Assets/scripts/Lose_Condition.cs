@@ -15,6 +15,8 @@ public class Lose_Condition : MonoBehaviour
     public GameObject gameOverUI;
     public GameObject pauseButton;
     public GameObject itemCanvas;
+    public GameObject highScoreGO;
+
 
     void Start()
     {
@@ -31,6 +33,7 @@ public class Lose_Condition : MonoBehaviour
         jeremyPosition = Jeremy.transform.position;
 
         //if jeremy dies via hole
+        int i = 0;
         foreach (GameObject piece in worldBuilderScript.currentWorld)
         {
             //if the piece exists, get its anchors
@@ -39,7 +42,13 @@ public class Lose_Condition : MonoBehaviour
                 Transform left = piece.GetComponent<World_Piece>().leftAnchor;
                 Transform right = piece.GetComponent<World_Piece>().rightAnchor;
 
-                // if jeremy is on that terrain piece and hes in the air
+                //catches if jeremy is going left and he falls off the world
+                if (i == 0 && jeremyPosition.x <= left.position.x && jeremyPosition.y < -10)
+                {
+                    GameOver();
+                }
+
+                //if jeremy is on that terrain piece and hes in the air
                 if (jeremyPosition.x > left.position.x && jeremyPosition.x < right.position.x && jeremyScript.state_grounded == false)
                 {
                     //if he goes 8 units below the surface, game over
@@ -48,12 +57,7 @@ public class Lose_Condition : MonoBehaviour
                         GameOver();
                     }
                 }
-
-                //catches if jeremy is going left and he falls off the world
-                if (jeremyPosition.x <= left.position.x && jeremyPosition.y < -10)
-                {
-                    GameOver();
-                }
+                i++;
             }
         }
     }
@@ -63,6 +67,7 @@ public class Lose_Condition : MonoBehaviour
         gameOverUI.SetActive(true);
         pauseButton.SetActive(false);
         itemCanvas.SetActive(false);
+        highScoreGO.SetActive(true);
         Time.timeScale = 0f;
     }
 }
