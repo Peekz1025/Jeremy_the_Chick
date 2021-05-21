@@ -17,6 +17,8 @@ public class Lose_Condition : MonoBehaviour
     public GameObject itemCanvas;
     public GameObject highScoreGO;
 
+    bool playdeath = false;
+
 
     void Start()
     {
@@ -64,10 +66,20 @@ public class Lose_Condition : MonoBehaviour
 
     void GameOver()
     {
+        PlayDeathSound();
         gameOverUI.SetActive(true);
         pauseButton.SetActive(false);
         itemCanvas.SetActive(false);
         highScoreGO.SetActive(true);
         Time.timeScale = 0f;
+    }
+
+    void PlayDeathSound()
+    {
+        if(playdeath == false)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Death Sound");
+            playdeath = true;
+        }
     }
 }

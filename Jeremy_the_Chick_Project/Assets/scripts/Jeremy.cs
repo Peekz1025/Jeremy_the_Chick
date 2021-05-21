@@ -24,7 +24,8 @@ public class Jeremy : Entity
     // Update is called once per frame
     void Update()
     {
-        if(right)
+
+        if (right)
         {
             setVelocity(new Vector2(2, velocity.y));
             if (movementController.data.right.hit)
@@ -58,7 +59,7 @@ public class Jeremy : Entity
         }
 
         //checks to see if it collided with a spring below it
-        if (movementController.data.down.hit && movementController.data.down.obj.Contains("Spring"))
+        if (movementController.data.down.hit && movementController.data.down.obj.Contains("spring"))
         {
             SpringJump();
         }
@@ -99,7 +100,7 @@ public class Jeremy : Entity
             {
                 CreateDust();
                 setVelocity(new Vector2(velocity.x, jumpVelocity));
-
+                PlayHopSound();
                 state_grounded = false;
                 break;
             }
@@ -110,6 +111,7 @@ public class Jeremy : Entity
     {
         //Debug.Log("i hit a spring");
         CreateDust();
+        PlaySpringSound();
         setVelocity(new Vector2(velocity.x, jumpVelocity * 2));
         state_grounded = false;
     }
@@ -118,6 +120,17 @@ public class Jeremy : Entity
     {
         dust.Play();
     }
+
+    void PlaySpringSound()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Effects/Spring Jump");
+    }
+
+    void PlayHopSound()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Jeremy Hop");
+    }
+
 }
 
 

@@ -11,6 +11,8 @@ public class ClearTrash : MonoBehaviour
     
     public void DestroyItems()
     {
+        bool playedsound = false;
+
         currentLogs = GameObject.FindGameObjectsWithTag("Log");
         currentRocks = GameObject.FindGameObjectsWithTag("Spring");
         currentSprings = GameObject.FindGameObjectsWithTag("Rock");
@@ -19,18 +21,38 @@ public class ClearTrash : MonoBehaviour
         {
             Instantiate(explosion, item.transform.position, item.transform.rotation);
             Destroy(item);
+            if (playedsound == false)
+            {
+                PlayDestroySound();
+                playedsound = true;
+            }
         }
 
         foreach (GameObject item in currentRocks)
         {
             Instantiate(explosion, item.transform.position, item.transform.rotation);
             Destroy(item);
+            if (playedsound == false)
+            {
+                PlayDestroySound();
+                playedsound = true;
+            }
         }
 
         foreach (GameObject item in currentSprings)
         {
             Instantiate(explosion, item.transform.position, item.transform.rotation);
             Destroy(item);
+            if (playedsound == false)
+            {
+                PlayDestroySound();
+                playedsound = true;
+            }
         }
+    }
+
+    void PlayDestroySound()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Effects/Item Destroyed");
     }
 }

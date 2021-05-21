@@ -26,5 +26,6 @@ public class Destroyer : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
+
 }
 

@@ -15,6 +15,7 @@ TagManager:
   - PausePanel
   - PauseButton
   - Egg
+  - Ground
   layers:
   - Default
   - TransparentFX

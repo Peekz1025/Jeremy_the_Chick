@@ -47,6 +47,7 @@ public class Egg_Collection : MonoBehaviour
                 itemPosition.y < jeremyPosition.y + 0.915f && itemPosition.y > jeremyPosition.y - 0.915f)
             {
                 collectedEggs++;
+                PlayEggSound();
                 Instantiate(collectParticles, item.transform.position, item.transform.rotation);
                 Destroy(item.gameObject);
             }
@@ -55,5 +56,8 @@ public class Egg_Collection : MonoBehaviour
         PlayerPrefs.SetInt("CollectedEggs", collectedEggs);
     }
 
-
+    void PlayEggSound()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Effects/Egg Collect");
+    }
 }

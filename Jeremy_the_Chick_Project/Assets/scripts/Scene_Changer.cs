@@ -4,6 +4,7 @@ using System.Collections;
 
 public class Scene_Changer : MonoBehaviour
 {
+    
     public void LoadGame()
     {
         SceneManager.LoadScene("game");
@@ -24,5 +25,10 @@ public class Scene_Changer : MonoBehaviour
     public void ExitGame()
     {
         Application.Quit();
+    }
+
+    public void PlayUISound()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Effects/UI Click");
     }
 }

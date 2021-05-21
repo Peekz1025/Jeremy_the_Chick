@@ -110,6 +110,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f984e20664240a4e934c69daeef398a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1754101732747642668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5478862717781313025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7377a8cb677e0894da5a78b88b603952, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3752744899621246447
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -203,7 +215,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1068010750685704, guid: f72335d0f97cbdd4abec38471223522a, type: 3}
       propertyPath: m_Name
-      value: Rock
+      value: rock
       objectReference: {fileID: 0}
     - target: {fileID: 1068010750685704, guid: f72335d0f97cbdd4abec38471223522a, type: 3}
       propertyPath: m_TagString

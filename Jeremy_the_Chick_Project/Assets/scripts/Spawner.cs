@@ -25,8 +25,13 @@ public class Spawner : MonoBehaviour
             Vector3 touchPosition = mainCamera.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1f));
             //touchPosition.z = -1;
             Instantiate(prefab, touchPosition, Quaternion.identity);
+            PlaySpawnSound();
         }
+    }
 
+    void PlaySpawnSound()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Effects/Item Spawned");
     }
 }
 

@@ -11,20 +11,40 @@ ScriptsOnlyBuild:
     - Jeremy
     - Log_test
     - Lose_Condition
+    - Music_Script
     - Parallax
     - Particle_Destory
     - Pause_Menu
     - Scene_Changer
     - Sky_Builder
     - Spawner
+    - Thud_Sound
     - Touch_Drag
     - World_Builder
     - World_Piece
+    FMODUnity.dll:
+    - FMODUnity.PlatformAndroid
+    - FMODUnity.PlatformAppleTV
+    - FMODUnity.PlatformDefault
+    - FMODUnity.PlatformIOS
+    - FMODUnity.PlatformLinux
+    - FMODUnity.PlatformMac
+    - FMODUnity.PlatformMobileHigh
+    - FMODUnity.PlatformMobileLow
+    - FMODUnity.PlatformPlayInEditor
+    - FMODUnity.PlatformWebGL
+    - FMODUnity.PlatformWindows
+    - FMODUnity.Settings
+    - FMODUnity.StudioListener
+    FMODUnityEditor.dll:
+    - FMODUnity.EditorBankRef
+    - FMODUnity.EditorEventRef
+    - FMODUnity.EditorParamRef
+    - FMODUnity.EventCache
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
-    - UnityEditor.Tilemaps.GridBrushEditor
     - UnityEditor.Tilemaps.GridPaintPaletteClipboard
     - UnityEditor.Tilemaps.GridPaintPaletteWindow
     - UnityEditor.Tilemaps.GridPaintingState
@@ -38,11 +58,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateMachineInspector
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -87,57 +104,63 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11170}
+      Script: {instanceID: 11286}
     - Class: 114
-      Script: {instanceID: 11190}
+      Script: {instanceID: 11306}
     - Class: 114
-      Script: {instanceID: 11454}
+      Script: {instanceID: 11394}
     - Class: 114
-      Script: {instanceID: 11462}
+      Script: {instanceID: 11602}
     - Class: 114
-      Script: {instanceID: 11516}
+      Script: {instanceID: 11610}
     - Class: 114
-      Script: {instanceID: 11530}
+      Script: {instanceID: 11666}
     - Class: 114
-      Script: {instanceID: 11568}
+      Script: {instanceID: 11680}
     - Class: 114
-      Script: {instanceID: 11794}
+      Script: {instanceID: 11718}
     - Class: 114
-      Script: {instanceID: 11804}
+      Script: {instanceID: 11966}
     - Class: 114
-      Script: {instanceID: 12064}
+      Script: {instanceID: 11976}
     - Class: 114
-      Script: {instanceID: 12088}
+      Script: {instanceID: 12256}
     - Class: 114
-      Script: {instanceID: 12116}
+      Script: {instanceID: 12280}
     - Class: 114
-      Script: {instanceID: 12188}
+      Script: {instanceID: 12316}
     - Class: 114
-      Script: {instanceID: 12290}
+      Script: {instanceID: 12390}
     - Class: 114
-      Script: {instanceID: 12578}
+      Script: {instanceID: 12494}
     - Class: 114
-      Script: {instanceID: 12896}
+      Script: {instanceID: 12806}
     - Class: 114
-      Script: {instanceID: 12958}
+      Script: {instanceID: 12898}
     - Class: 114
-      Script: {instanceID: 13012}
+      Script: {instanceID: 13148}
     - Class: 114
-      Script: {instanceID: 13188}
+      Script: {instanceID: 13214}
     - Class: 114
-      Script: {instanceID: 13272}
+      Script: {instanceID: 13276}
     - Class: 114
-      Script: {instanceID: 13660}
+      Script: {instanceID: 13462}
     - Class: 114
-      Script: {instanceID: 13720}
+      Script: {instanceID: 13548}
     - Class: 114
-      Script: {instanceID: 13752}
+      Script: {instanceID: 13842}
     - Class: 114
-      Script: {instanceID: 14206}
+      Script: {instanceID: 13966}
     - Class: 114
-      Script: {instanceID: 14276}
+      Script: {instanceID: 14034}
     - Class: 114
-      Script: {instanceID: 14362}
+      Script: {instanceID: 14072}
+    - Class: 114
+      Script: {instanceID: 14554}
+    - Class: 114
+      Script: {instanceID: 14624}
+    - Class: 114
+      Script: {instanceID: 14718}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -188,29 +211,53 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 586}
+      Script: {instanceID: 700}
     - Class: 114
-      Script: {instanceID: 11170}
+      Script: {instanceID: 11286}
     - Class: 114
-      Script: {instanceID: 11462}
+      Script: {instanceID: 11610}
     - Class: 114
-      Script: {instanceID: 11516}
+      Script: {instanceID: 11666}
     - Class: 114
-      Script: {instanceID: 12064}
+      Script: {instanceID: 11766}
     - Class: 114
-      Script: {instanceID: 12188}
+      Script: {instanceID: 11878}
     - Class: 114
-      Script: {instanceID: 12310}
+      Script: {instanceID: 12102}
     - Class: 114
-      Script: {instanceID: 12628}
+      Script: {instanceID: 12222}
     - Class: 114
-      Script: {instanceID: 12896}
+      Script: {instanceID: 12256}
     - Class: 114
-      Script: {instanceID: 13660}
+      Script: {instanceID: 12300}
     - Class: 114
-      Script: {instanceID: 13752}
+      Script: {instanceID: 12390}
     - Class: 114
-      Script: {instanceID: 14276}
+      Script: {instanceID: 12518}
+    - Class: 114
+      Script: {instanceID: 12546}
+    - Class: 114
+      Script: {instanceID: 12860}
+    - Class: 114
+      Script: {instanceID: 13046}
+    - Class: 114
+      Script: {instanceID: 13148}
+    - Class: 114
+      Script: {instanceID: 13748}
+    - Class: 114
+      Script: {instanceID: 13966}
+    - Class: 114
+      Script: {instanceID: 14036}
+    - Class: 114
+      Script: {instanceID: 14048}
+    - Class: 114
+      Script: {instanceID: 14072}
+    - Class: 114
+      Script: {instanceID: 14152}
+    - Class: 114
+      Script: {instanceID: 14624}
+    - Class: 114
+      Script: {instanceID: 14690}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -268,6 +315,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: a942a425744702e7facab114defeefdb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Music_Script
+  - hash:
+      serializedVersion: 2
+      Hash: 20b332383e61f96f02730c5f42fef7cf
+    assemblyName: FMODUnity.dll
+    namespaceName: FMODUnity
+    className: PlatformGroup
   - hash:
       serializedVersion: 2
       Hash: e7a73f5f78ba6445195ec23b74a1ce2d
@@ -360,10 +419,22 @@ ScriptsOnlyBuild:
     className: TMP_InputField
   - hash:
       serializedVersion: 2
+      Hash: ad0a90df225a85d2b19c5faf1a43177b
+    assemblyName: FMODUnity.dll
+    namespaceName: FMODUnity
+    className: PlatformMobileLow
+  - hash:
+      serializedVersion: 2
       Hash: 7ab0e790220bdca831fdd886b339039d
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: GridLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Animation_Test
   - hash:
       serializedVersion: 2
       Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
@@ -388,6 +459,24 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: PhysicsRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: ad0a90df225a85d2b19c5faf1a43177b
+    assemblyName: FMODUnity.dll
+    namespaceName: FMODUnity
+    className: PlatformAndroid
+  - hash:
+      serializedVersion: 2
+      Hash: a6e3c7eb90cba24ee3ab1cd02ed0046b
+    assemblyName: FMODUnity.dll
+    namespaceName: FMODUnity
+    className: StudioEventEmitter
+  - hash:
+      serializedVersion: 2
+      Hash: fb9ffa19cc5f6f8e5c4464a77236fffa
+    assemblyName: FMODUnity.dll
+    namespaceName: FMODUnity
+    className: StudioGlobalParameterTrigger
   - hash:
       serializedVersion: 2
       Hash: bd3cf68c8964d3c66d1c43f4f98508c9
@@ -426,6 +515,12 @@ ScriptsOnlyBuild:
     className: CinemachinePixelPerfect
   - hash:
       serializedVersion: 2
+      Hash: 444398bc4fb783b0b448ac3c979214e1
+    assemblyName: FMODUnityResonance.dll
+    namespaceName: FMODUnityResonance
+    className: FmodResonanceAudioRoom
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -444,6 +539,12 @@ ScriptsOnlyBuild:
     className: PixelPerfectCamera
   - hash:
       serializedVersion: 2
+      Hash: ad0a90df225a85d2b19c5faf1a43177b
+    assemblyName: FMODUnity.dll
+    namespaceName: FMODUnity
+    className: PlatformWebGL
+  - hash:
+      serializedVersion: 2
       Hash: 5ab533713adae59372fb3e10a585c186
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -456,6 +557,12 @@ ScriptsOnlyBuild:
     className: Mask
   - hash:
       serializedVersion: 2
+      Hash: f02e7f5f95372c9bc8e358d573d235b0
+    assemblyName: FMODUnity.dll
+    namespaceName: FMODUnity
+    className: Settings
+  - hash:
+      serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -466,6 +573,18 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Lose_Condition
+  - hash:
+      serializedVersion: 2
+      Hash: 2ec6667e5c574bcffe26a1c9289b1b0e
+    assemblyName: FMODUnity.dll
+    namespaceName: FMODUnity
+    className: FMODEventPlayable
+  - hash:
+      serializedVersion: 2
+      Hash: ad0a90df225a85d2b19c5faf1a43177b
+    assemblyName: FMODUnity.dll
+    namespaceName: FMODUnity
+    className: PlatformLinux
   - hash:
       serializedVersion: 2
       Hash: b13d6c62f36e2d124e8130beb5f5410f
@@ -534,6 +653,18 @@ ScriptsOnlyBuild:
     className: Parallax
   - hash:
       serializedVersion: 2
+      Hash: ad0a90df225a85d2b19c5faf1a43177b
+    assemblyName: FMODUnity.dll
+    namespaceName: FMODUnity
+    className: PlatformAppleTV
+  - hash:
+      serializedVersion: 2
+      Hash: c3d3430df9e3ea95e3e3d587961390fb
+    assemblyName: FMODUnity.dll
+    namespaceName: FMODUnity
+    className: FMODEventTrack
+  - hash:
+      serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -570,6 +701,12 @@ ScriptsOnlyBuild:
     className: SpriteSkinEntity
   - hash:
       serializedVersion: 2
+      Hash: 78ed600767ee635c93a9c698186c105b
+    assemblyName: FMODUnity.dll
+    namespaceName: FMODUnity
+    className: StudioListener
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -580,6 +717,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: RemoteTestResultSender
+  - hash:
+      serializedVersion: 2
+      Hash: ad0a90df225a85d2b19c5faf1a43177b
+    assemblyName: FMODUnity.dll
+    namespaceName: FMODUnity
+    className: PlatformMobileHigh
   - hash:
       serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
@@ -690,6 +833,18 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
+      Hash: ad0a90df225a85d2b19c5faf1a43177b
+    assemblyName: FMODUnity.dll
+    namespaceName: FMODUnity
+    className: PlatformPlayInEditor
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Thud_Sound
+  - hash:
+      serializedVersion: 2
       Hash: 8001a5f7502aab37e42206da015e6914
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -714,16 +869,46 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
+      Hash: af18424ab4310bab8befde4fcb8b8ca8
+    assemblyName: FMODUnity.dll
+    namespaceName: FMODUnity
+    className: StudioParameterTrigger
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Log_test
   - hash:
       serializedVersion: 2
+      Hash: ad0a90df225a85d2b19c5faf1a43177b
+    assemblyName: FMODUnity.dll
+    namespaceName: FMODUnity
+    className: PlatformDefault
+  - hash:
+      serializedVersion: 2
+      Hash: 4680db657a09772d677eb34657f979a8
+    assemblyName: FMODUnity.dll
+    namespaceName: FMODUnity
+    className: FMODRuntimeManagerOnGUIHelper
+  - hash:
+      serializedVersion: 2
+      Hash: ad0a90df225a85d2b19c5faf1a43177b
+    assemblyName: FMODUnity.dll
+    namespaceName: FMODUnity
+    className: PlatformIOS
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Scene_Changer
+  - hash:
+      serializedVersion: 2
+      Hash: ad0a90df225a85d2b19c5faf1a43177b
+    assemblyName: FMODUnity.dll
+    namespaceName: FMODUnity
+    className: PlatformWindows
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -760,6 +945,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: BaseInput
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: FMODUnity.dll
+    namespaceName: FMODUnity
+    className: RuntimeManager
   - hash:
       serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
@@ -810,6 +1001,12 @@ ScriptsOnlyBuild:
     className: StandaloneInputModule
   - hash:
       serializedVersion: 2
+      Hash: 7d11e17b0323c2d01abce64d39203eb6
+    assemblyName: FMODUnity.dll
+    namespaceName: FMODUnity
+    className: StudioBankLoader
+  - hash:
+      serializedVersion: 2
       Hash: aa88ae22474df55295327e4ee99e5a24
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -826,6 +1023,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Slider
+  - hash:
+      serializedVersion: 2
+      Hash: ad0a90df225a85d2b19c5faf1a43177b
+    assemblyName: FMODUnity.dll
+    namespaceName: FMODUnity
+    className: PlatformMac
   - hash:
       serializedVersion: 2
       Hash: 0fd6822f6177297bd0eb4d83cc7a9030
@@ -854,4 +1057,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/home.unity
   - Assets/Scenes/game.unity
-  playerPath: C:/Users/Robby/Desktop/Jeremy 2.0/Jeremy_the_Chick_Project.exe
+  playerPath: C:/Users/Robby/Desktop/Jeremy Sound/Jeremy_the_Chick_Project.exe
