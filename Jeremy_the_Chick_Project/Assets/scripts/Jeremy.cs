@@ -27,7 +27,9 @@ public class Jeremy : Entity
 
         if (right)
         {
-            setVelocity(new Vector2(2, velocity.y));
+
+            //setVelocity(new Vector2(2, velocity.y));
+            Move();
             if (movementController.data.right.hit)
             {
                 right = false;
@@ -59,7 +61,7 @@ public class Jeremy : Entity
         }
 
         //checks to see if it collided with a spring below it
-        if (movementController.data.down.hit && movementController.data.down.obj.Contains("spring"))
+        if (movementController.data.down.hit && movementController.data.down.obj.Contains("Spring"))
         {
             SpringJump();
         }
@@ -114,6 +116,27 @@ public class Jeremy : Entity
         PlaySpringSound();
         setVelocity(new Vector2(velocity.x, jumpVelocity * 2));
         state_grounded = false;
+    }
+
+    private void Move()
+    {
+        if (this.transform.position.x >= 200 && this.transform.position.x < 500)
+            setVelocity(new Vector2(2.5f, velocity.y));
+        
+        else if (this.transform.position.x >= 500 && this.transform.position.x < 1000)
+            setVelocity(new Vector2(2.75f, velocity.y));
+
+        else if (this.transform.position.x >= 1000 && this.transform.position.x < 1500)
+            setVelocity(new Vector2(3f, velocity.y));
+
+        else if (this.transform.position.x >= 1500 && this.transform.position.x < 2000)
+            setVelocity(new Vector2(3.5f, velocity.y));
+
+        else if (this.transform.position.x >= 2000)
+            setVelocity(new Vector2(4f, velocity.y));
+
+        else
+            setVelocity(new Vector2(2, velocity.y));
     }
 
     void CreateDust()

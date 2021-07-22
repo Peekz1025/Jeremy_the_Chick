@@ -65,6 +65,8 @@
     <Compile Include="Assets\scripts\Animation_Test.cs" />
     <Compile Include="Assets\scripts\ClearTrash.cs" />
     <Compile Include="Assets\scripts\Collisions.cs" />
+    <Compile Include="Assets\scripts\Customize_Jeremy.cs" />
+    <Compile Include="Assets\scripts\Customize_Navigation.cs" />
     <Compile Include="Assets\scripts\Destroyer.cs" />
     <Compile Include="Assets\scripts\Distance_Tracker.cs" />
     <Compile Include="Assets\scripts\Egg_Collection.cs" />
@@ -75,10 +77,12 @@
     <Compile Include="Assets\scripts\Log_test.cs" />
     <Compile Include="Assets\scripts\Lose_Condition.cs" />
     <Compile Include="Assets\scripts\Music_Script.cs" />
+    <Compile Include="Assets\scripts\Outfit_Checker.cs" />
     <Compile Include="Assets\scripts\Parallax.cs" />
     <Compile Include="Assets\scripts\Particle_Destory.cs" />
     <Compile Include="Assets\scripts\Pause_Menu.cs" />
     <Compile Include="Assets\scripts\Raycast_Controller.cs" />
+    <Compile Include="Assets\scripts\Reset_PlayerPrefs.cs" />
     <Compile Include="Assets\scripts\Scene_Changer.cs" />
     <Compile Include="Assets\scripts\Sky_Builder.cs" />
     <Compile Include="Assets\scripts\Spawner.cs" />
