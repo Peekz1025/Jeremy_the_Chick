@@ -43,8 +43,10 @@ public class Egg_Collection : MonoBehaviour
         foreach (GameObject item in currentEggs)
         {
             Vector3 itemPosition = item.transform.position;
-            if (itemPosition.x < jeremyPosition.x + 0.87f && itemPosition.x > jeremyPosition.x - 0.87f &&
-                itemPosition.y < jeremyPosition.y + 0.915f && itemPosition.y > jeremyPosition.y - 0.915f)
+            /*if (itemPosition.x < jeremyPosition.x + 0.87f && itemPosition.x > jeremyPosition.x - 0.87f &&
+                itemPosition.y < jeremyPosition.y + 0.915f && itemPosition.y > jeremyPosition.y - 0.915f)*/
+            if (itemPosition.x < jeremyPosition.x + 1 && itemPosition.x > jeremyPosition.x - 1 &&
+                itemPosition.y < jeremyPosition.y + 1 && itemPosition.y > jeremyPosition.y - 1)
             {
                 collectedEggs++;
                 PlayEggSound();

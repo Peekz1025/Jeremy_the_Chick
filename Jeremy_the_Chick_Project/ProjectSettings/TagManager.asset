@@ -16,6 +16,7 @@ TagManager:
   - PauseButton
   - Egg
   - Ground
+  - Hole
   layers:
   - Default
   - TransparentFX

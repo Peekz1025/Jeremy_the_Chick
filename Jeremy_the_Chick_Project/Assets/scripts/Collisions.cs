@@ -40,12 +40,14 @@ public class Collisions : Raycast_Controller
         public bool hit;
         public int layer;
         public string obj;
+        public Vector3 velocity;
 
         public void Reset()
         {
             layer = 0;
             hit = false;
             obj = "";
+            velocity = new Vector3();
         }
     }
 
@@ -105,6 +107,13 @@ public class Collisions : Raycast_Controller
                 data.hit = true;
                 data.layer = hit.collider.gameObject.layer;
                 data.obj = hit.collider.gameObject.name;
+
+                if (hit.collider.attachedRigidbody)
+                {
+                    data.velocity = hit.collider.attachedRigidbody.velocity;
+                }
+                //data.velocity = hit.rigidbody.velocity;
+                //data.velocity = hit.collider.attachedRigidbody.velocity;
 
                 // Record the remaining velocity
                 velocity = Mathf.Clamp((hit.distance - castOriginDepth), 0, float.MaxValue) * (float)(rayDirection.x + rayDirection.y);

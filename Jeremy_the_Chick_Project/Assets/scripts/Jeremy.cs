@@ -15,6 +15,20 @@ public class Jeremy : Entity
     // PARTICLE EFFECTS
     public ParticleSystem dust;
 
+
+
+
+    public GameObject gameOverUI;
+    public GameObject pauseButton;
+    public GameObject itemCanvas;
+    public GameObject highScoreGO;
+
+    bool playdeath = false;
+
+
+
+
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -61,10 +75,22 @@ public class Jeremy : Entity
         }
 
         //checks to see if it collided with a spring below it
-        if (movementController.data.down.hit && movementController.data.down.obj.Contains("Spring"))
+        if (movementController.data.down.hit && movementController.data.down.obj.Contains("Spring") )
         {
-            SpringJump();
+            //make sure its grounded
+            //Debug.Log(movementController.data.down.velocity);
+            if (movementController.data.down.velocity == new Vector3(0.0f, 0.0f, 0.0f))
+            {
+                SpringJump();
+            }
         }
+
+        if (movementController.data.down.hit && movementController.data.down.obj.Contains("Hole"))
+        {
+            //Debug.Log("Die");
+            GameOver();
+        }
+
     }
 
     private void LateUpdate()
@@ -152,6 +178,29 @@ public class Jeremy : Entity
     void PlayHopSound()
     {
         FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Jeremy Hop");
+    }
+
+
+
+
+
+    void GameOver()
+    {
+        PlayDeathSound();
+        gameOverUI.SetActive(true);
+        pauseButton.SetActive(false);
+        itemCanvas.SetActive(false);
+        highScoreGO.SetActive(true);
+        Time.timeScale = 0f;
+    }
+
+    void PlayDeathSound()
+    {
+        if (playdeath == false)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Death Sound");
+            playdeath = true;
+        }
     }
 
 }
