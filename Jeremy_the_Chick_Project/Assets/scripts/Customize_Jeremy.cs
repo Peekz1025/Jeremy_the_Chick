@@ -185,7 +185,7 @@ public class Customize_Jeremy : MonoBehaviour
 
         /*
         //manually add or subtract eggs * 2
-        collectedEggs = collectedEggs + 10;
+        collectedEggs = collectedEggs + 5;
         eggText.text = "Eggs: " + collectedEggs;
         PlayerPrefs.SetInt("CollectedEggs", collectedEggs);
         */
@@ -214,7 +214,7 @@ public class Customize_Jeremy : MonoBehaviour
     public void BuyParty()
     {
         //if you have enough eggs to buy
-        if (collectedEggs - cost > 0)
+        if (collectedEggs - cost >= 0)
         {
             collectedEggs = collectedEggs - cost;
             eggText.text = "Eggs: " + collectedEggs;
@@ -250,7 +250,7 @@ public class Customize_Jeremy : MonoBehaviour
     public void BuyBow()
     {
         //if you have enough eggs to buy
-        if (collectedEggs - cost > 0)
+        if (collectedEggs - cost >= 0)
         {
             collectedEggs = collectedEggs - cost;
             eggText.text = "Eggs: " + collectedEggs;
@@ -286,7 +286,7 @@ public class Customize_Jeremy : MonoBehaviour
     public void BuyShades()
     {
         //if you have enough eggs to buy
-        if (collectedEggs - cost > 0)
+        if (collectedEggs - cost >= 0)
         {
             collectedEggs = collectedEggs - cost;
             eggText.text = "Eggs: " + collectedEggs;
@@ -322,7 +322,7 @@ public class Customize_Jeremy : MonoBehaviour
     public void BuyCap()
     {
         //if you have enough eggs to buy
-        if (collectedEggs - cost > 0)
+        if (collectedEggs - cost >= 0)
         {
             collectedEggs = collectedEggs - cost;
             eggText.text = "Eggs: " + collectedEggs;
