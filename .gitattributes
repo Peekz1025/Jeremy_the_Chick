@@ -1,3 +1,4 @@
+*.sym.so filter=lfs diff=lfs merge=lfs -text
 *.fobj filter=lfs diff=lfs merge=lfs -text
 *.pdc filter=lfs diff=lfs merge=lfs -text
 *.xml filter=lfs diff=lfs merge=lfs -text
