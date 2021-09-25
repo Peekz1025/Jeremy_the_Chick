@@ -1,9 +1,3 @@
-# IErrorCallbacks
-An extended version of the [ICallbacks](./reference-icallbacks.md), which get invoked if the test run fails due to a build error or if any [IPrebuildSetup](./reference-setup-and-cleanup.md) has a failure.
-
-## Public methods
-
-| Syntax                       | Description                                                         |
-| ---------------------------- | ------------------------------------------------------------------- |
-| void OnError(string message) | The error message detailing the reason for the run to fail.         |
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:a7ff090f206cc8c49772d1fe5a99f68e04c28b34311ebe90cc697ad01e5ff1cd
+size 553

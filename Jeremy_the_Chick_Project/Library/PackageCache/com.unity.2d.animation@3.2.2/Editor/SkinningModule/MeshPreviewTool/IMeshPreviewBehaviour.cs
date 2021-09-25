@@ -1,15 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace UnityEditor.U2D.Animation
-{
-    internal interface IMeshPreviewBehaviour
-    {
-        float GetWeightMapOpacity(SpriteCache sprite);
-        bool DrawWireframe(SpriteCache sprite);
-        bool Overlay(SpriteCache sprite);
-        bool OverlayWireframe(SpriteCache sprite);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9b4ba6042e3d44f02478ece7e00194d0a9e3c8f5bc952567d379455576e32da7
+size 387

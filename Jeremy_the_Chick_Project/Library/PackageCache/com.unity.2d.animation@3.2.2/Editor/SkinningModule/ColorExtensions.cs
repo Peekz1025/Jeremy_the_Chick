@@ -1,16 +1,3 @@
-using UnityEngine;
-using UnityEditor;
-using System;
-using System.Collections.Generic;
-using UnityEngine.U2D;
-
-namespace UnityEditor.U2D.Animation
-{
-    internal static class ColorExtensions
-    {
-        public static Color AlphaMultiplied(this Color c, float multiplier)
-        {
-            return new Color(c.r, c.g, c.b, c.a * multiplier);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2ffca8df8b5c74bb15f78fad81127d7531a4afa41e28e76c0b63f5ebbb23fe08
+size 363

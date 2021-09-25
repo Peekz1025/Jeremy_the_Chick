@@ -1,19 +1,3 @@
-# WaitForDomainReload
-`WaitForDomainReload` is an [IEditModeTestYieldInstruction](./reference-custom-yield-instructions.md) that you can yield in Edit Mode tests. It delays the execution of scripts until after an incoming domain reload. If the domain reload results in a script compilation failure, then it throws an exception.
-
-## Constructors
-
-| Syntax                       | Description                                                  |
-| ---------------------------- | ------------------------------------------------------------ |
-| `WaitForDomainReload()` | Create a new instance of the `WaitForDomainReload` yield instruction. |
-
-## Example
-``` C@
-[UnitySetUp]
-public IEnumerator SetUp()
-{
-    File.Copy("Resources/MyDll.dll", @"Assets/MyDll.dll", true); // Trigger a domain reload.
-    AssetDatabase.Refresh();
-    yield return new WaitForDomainReload();
-}
-```
+version https://git-lfs.github.com/spec/v1
+oid sha256:80aa3b690250266a3ffd3c951ce9658b90db6d959387685b984a6b8ad6b830bc
+size 870

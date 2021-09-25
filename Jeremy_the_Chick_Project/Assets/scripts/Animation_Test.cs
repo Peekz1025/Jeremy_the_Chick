@@ -1,24 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class Animation_Test : MonoBehaviour
-{
-    Animator anim;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        anim = GetComponent<Animator>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        AnimationClip[] clips = anim.runtimeAnimatorController.animationClips;
-        foreach (AnimationClip clip in clips)
-        {
-            Debug.Log(clip.length);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3e5f05a061e0dd762f4a6b969a71190fb496e55ab52506f202e697d3944ea4f7
+size 525

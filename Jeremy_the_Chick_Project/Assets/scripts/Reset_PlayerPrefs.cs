@@ -1,12 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class Reset_PlayerPrefs : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        PlayerPrefs.DeleteAll();
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1bea2bef762cfab4c900e188cdea053fdcc32c1ae1590f22962e3f7a7e0a7bec
+size 249

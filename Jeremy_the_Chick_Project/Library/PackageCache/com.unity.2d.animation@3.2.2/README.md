@@ -1,15 +1,3 @@
-2D Character Animation
-
-Editor tools and runtime scripts to support the authoring of 2D Animated Characters.  
-
-Editor Tooling
-- Skinning Editor
-  - Available through Sprite Editor Window module
-  - Bone tools allow creation of bind poses easily. Supports flexible setup of complex hierarchy.
-  - Mesh tools allow auto mesh tesselation or manual tesselation
-  - Weight tools allow auto weight calculation and weight painting
-
-
-Runtime Support
-- SpriteSkin deformation
-- 2D IK
+version https://git-lfs.github.com/spec/v1
+oid sha256:5d3bcf91ce591ca5fb9054ed18e7050fae361cbc25e7817e40244ae2902f80f6
+size 475

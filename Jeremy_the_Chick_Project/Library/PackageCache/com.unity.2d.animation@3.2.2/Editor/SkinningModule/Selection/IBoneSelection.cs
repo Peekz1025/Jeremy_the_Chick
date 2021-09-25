@@ -1,10 +1,3 @@
-using System;
-using System.Linq;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace UnityEditor.U2D.Animation
-{
-    internal interface IBoneSelection : ITransformSelection<BoneCache> {}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2c742aa240e18965f3501cb212fdcff69ed97aea21a066031a13d17bbc9ca187
+size 227

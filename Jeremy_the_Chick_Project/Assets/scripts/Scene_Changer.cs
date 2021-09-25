@@ -1,34 +1,3 @@
-﻿using UnityEngine;
-using UnityEngine.SceneManagement;
-using System.Collections;
-
-public class Scene_Changer : MonoBehaviour
-{
-    
-    public void LoadGame()
-    {
-        SceneManager.LoadScene("game");
-    }
-
-    public void LoadHome()
-    {
-        Time.timeScale = 1f;
-        SceneManager.LoadScene("home");
-    }
-
-    public void Restart()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        Time.timeScale = 1f;
-    }
-
-    public void ExitGame()
-    {
-        Application.Quit();
-    }
-
-    public void PlayUISound()
-    {
-        FMODUnity.RuntimeManager.PlayOneShot("event:/Effects/UI Click");
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a8066b29ca8d4685ffee9c3b566305e6b06f265deb3c3d6fbbb948cbd5884b63
+size 650

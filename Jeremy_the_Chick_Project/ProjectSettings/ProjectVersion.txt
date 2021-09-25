@@ -1,2 +1,3 @@
-m_EditorVersion: 2019.4.1f1
-m_EditorVersionWithRevision: 2019.4.1f1 (e6c045e14e4e)
+version https://git-lfs.github.com/spec/v1
+oid sha256:e7f8b860e652752c5455cc3e91e01d3c1c2ed9f0cde900077cb39153b8cc8967
+size 83

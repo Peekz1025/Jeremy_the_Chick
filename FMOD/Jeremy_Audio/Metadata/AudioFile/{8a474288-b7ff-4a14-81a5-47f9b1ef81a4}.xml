@@ -1,20 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.01.00">
-	<object class="AudioFile" id="{8a474288-b7ff-4a14-81a5-47f9b1ef81a4}">
-		<property name="assetPath">
-			<value>Spring Jump.wav</value>
-		</property>
-		<property name="frequencyInKHz">
-			<value>44.0999985</value>
-		</property>
-		<property name="channelCount">
-			<value>2</value>
-		</property>
-		<property name="length">
-			<value>0.98297052154195008</value>
-		</property>
-		<relationship name="masterAssetFolder">
-			<destination>{46eea93c-0f9d-452c-8a3e-e7ca812a63a3}</destination>
-		</relationship>
-	</object>
-</objects>
+version https://git-lfs.github.com/spec/v1
+oid sha256:9d122a2271cf042f05c74f8647882a8059ea03848ac9f8245d7fc78bc1075104
+size 611

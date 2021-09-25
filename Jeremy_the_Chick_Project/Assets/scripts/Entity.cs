@@ -1,35 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class Entity : MonoBehaviour
-{
-    protected Collisions movementController;
-
-    private Vector2 _velocity;
-    public Vector2 velocity { get { return _velocity; } set { setVelocity(value); } }
-
-    public bool enabled {get; private set;}
-
-    protected void Start()
-    {
-        enabled = true;
-    }
-
-    public void setVelocity(Vector2 newVelocity)
-    {
-        _velocity = newVelocity;
-    }
-
-    public void addVelocity(Vector2 newVelocity)
-    {
-        _velocity = new Vector2(_velocity.x+newVelocity.x, _velocity.y+newVelocity.y);
-    }
-
-    protected void applyVelocity() 
-    {
-       movementController.applyVelocity(_velocity * Time.deltaTime);
-       if(movementController.data.down.hit) _velocity.y = 0;
-
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b938105b73c41872205201a6421117897c77fb42cd2e541be37031417e9e33cd
+size 819

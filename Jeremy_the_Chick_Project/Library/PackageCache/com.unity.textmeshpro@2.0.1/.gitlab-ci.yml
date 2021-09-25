@@ -1,12 +1,3 @@
-image: node:6.10.0
-
-stages:
-  - push_to_packman_staging
-
-push_to_packman_staging:
-  stage: push_to_packman_staging
-  only:
-    - tags
-  script:
-    - curl -u $USER_NAME:$API_KEY https://staging-packages.unity.com/auth > .npmrc
-    - npm publish
+version https://git-lfs.github.com/spec/v1
+oid sha256:5d30a31453bf49a05f76a1aa8b38e19adf823a5c87670108dc3627ef87f6661f
+size 245

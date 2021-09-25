@@ -1,35 +1,3 @@
-using System;
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace UnityEditor.U2D.Animation
-{
-    internal class AssociateBonesScope : IDisposable
-    {
-        private bool m_Disposed;
-        private bool m_AssociateBones;
-        private SpriteCache m_Sprite;
-
-        public AssociateBonesScope(SpriteCache sprite)
-        {
-            m_Sprite = sprite;
-            m_AssociateBones = m_Sprite.AssociatePossibleBones();
-        }
-
-        ~AssociateBonesScope()
-        {
-            if (!m_Disposed)
-                Debug.LogError("Scope was not disposed! You should use the 'using' keyword or manually call Dispose.");
-        }
-
-        public void Dispose()
-        {
-            if (m_Disposed)
-                return;
-
-            m_Disposed = true;
-            if (m_AssociateBones)
-                m_Sprite.DeassociateUnusedBones();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0d4bb125b810b3fa4b4fb581e6ba1364e1099d8370716677f59f36203113afc1
+size 877

@@ -1,28 +1,3 @@
-using NUnit.Framework;
-using NUnit.Framework.Interfaces;
-
-namespace UnityEngine.TestTools.TestRunner
-{
-    internal class UnityTestTimeoutException : ResultStateException
-    {
-        public UnityTestTimeoutException(int timeout)
-            : base(BuildMessage(timeout))
-        {
-        }
-
-        private static string BuildMessage(int timeout)
-        {
-            return string.Format("UnityTest exceeded Timeout value of {0}ms", timeout);
-        }
-
-        public override ResultState ResultState
-        {
-            get { return ResultState.Failure; }
-        }
-
-        public override string StackTrace
-        {
-            get { return ""; }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3467f6fe882794ddcb1537985749153f8948efd831383f73b09e486a1c999905
+size 677

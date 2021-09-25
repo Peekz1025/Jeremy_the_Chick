@@ -1,20 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.01.00">
-	<object class="AudioFile" id="{1fa936a3-1eb6-4464-a33b-f449b86cfb57}">
-		<property name="assetPath">
-			<value>Leaves.wav</value>
-		</property>
-		<property name="frequencyInKHz">
-			<value>44.0999985</value>
-		</property>
-		<property name="channelCount">
-			<value>2</value>
-		</property>
-		<property name="length">
-			<value>5.9469160997732429</value>
-		</property>
-		<relationship name="masterAssetFolder">
-			<destination>{46eea93c-0f9d-452c-8a3e-e7ca812a63a3}</destination>
-		</relationship>
-	</object>
-</objects>
+version https://git-lfs.github.com/spec/v1
+oid sha256:c2f8a978caa7f809c831452fd6e2439d71f16396aac8029f2ecd1b380e499833
+size 605

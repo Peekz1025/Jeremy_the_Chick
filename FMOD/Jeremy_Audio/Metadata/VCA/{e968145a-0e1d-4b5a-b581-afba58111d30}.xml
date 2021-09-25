@@ -1,11 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.01.00">
-	<object class="MixerVCA" id="{e968145a-0e1d-4b5a-b581-afba58111d30}">
-		<property name="name">
-			<value>Music</value>
-		</property>
-		<relationship name="mixer">
-			<destination>{a4b3f8db-ca43-4fce-bc55-d9d48c36f6fa}</destination>
-		</relationship>
-	</object>
-</objects>
+version https://git-lfs.github.com/spec/v1
+oid sha256:8935a23a6d0f079c753566f93d33697932a947928a9165fbcfa292820e9691ac
+size 359

@@ -1,36 +1,3 @@
-using System;
-using System.Linq;
-using NUnit.Framework.Interfaces;
-using NUnit.Framework.Internal.Filters;
-using UnityEngine.SceneManagement;
-using UnityEngine.TestTools.TestRunner.GUI;
-
-namespace UnityEngine.TestTools.TestRunner
-{
-    [Serializable]
-    internal class PlaymodeTestsControllerSettings
-    {
-        [SerializeField]
-        public TestRunnerFilter[] filters;
-        public bool sceneBased;
-        public string originalScene;
-        public string bootstrapScene;
-
-        public static PlaymodeTestsControllerSettings CreateRunnerSettings(TestRunnerFilter[] filters)
-        {
-            var settings = new PlaymodeTestsControllerSettings
-            {
-                filters = filters,
-                sceneBased = false,
-                originalScene = SceneManager.GetActiveScene().path,
-                bootstrapScene = null
-            };
-            return settings;
-        }
-
-        internal ITestFilter BuildNUnitFilter()
-        {
-            return new OrFilter(filters.Select(f => f.BuildNUnitFilter()).ToArray());
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:06c9b324cb711e98a5b56e9b9a2821c9800a1f97957794dc8812d4e448ed9dea
+size 1068

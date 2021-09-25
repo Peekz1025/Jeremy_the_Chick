@@ -1,29 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class Egg_Spawner : MonoBehaviour
-{
-    public GameObject egg;
-
-    public void SpawnEggs(World_Piece worldPiece)
-    {
-        // 75% of the time, spawn eggs
-        if (Random.Range(1, 100) <= 80)
-        {
-            //make 2 eggs
-            for (int numEgg = 0; numEgg < Random.Range(1, 4); numEgg++)
-            {
-                Vector3 right = worldPiece.rightAnchor.position;
-                Vector3 left = worldPiece.leftAnchor.position;
-
-                //if there is no hieght change in the world piece, spawn eggs
-                if (right.y == left.y)
-                {
-                    Vector3 eggLocation = new Vector3(Random.Range(left.x, right.x), Random.Range(left.y + 2, right.y + 5), 0f);
-                    Instantiate(egg, eggLocation, Quaternion.identity);
-                }
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:aa9010b0ffb2dd41198042f9d7116f5eba44dd7240c9066269a8086d1f18fb6a
+size 926

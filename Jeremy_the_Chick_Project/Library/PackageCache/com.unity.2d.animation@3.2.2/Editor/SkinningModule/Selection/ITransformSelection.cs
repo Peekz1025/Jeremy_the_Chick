@@ -1,14 +1,3 @@
-using System;
-using System.Linq;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace UnityEditor.U2D.Animation
-{
-    internal interface ITransformSelection<T> : ISelection<T> where T : TransformCache
-    {
-        T root { get; }
-        T[] roots { get; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4f7a2b86215e81fb4b410ae7fbbdaf0eb3e3a431735b600332c77e2486d65874
+size 303

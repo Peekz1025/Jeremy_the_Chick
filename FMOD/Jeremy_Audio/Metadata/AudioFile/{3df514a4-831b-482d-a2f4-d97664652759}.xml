@@ -1,20 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.01.00">
-	<object class="AudioFile" id="{3df514a4-831b-482d-a2f4-d97664652759}">
-		<property name="assetPath">
-			<value>Egg Colllect 2.wav</value>
-		</property>
-		<property name="frequencyInKHz">
-			<value>44.0999985</value>
-		</property>
-		<property name="channelCount">
-			<value>2</value>
-		</property>
-		<property name="length">
-			<value>0.42020408163265305</value>
-		</property>
-		<relationship name="masterAssetFolder">
-			<destination>{46eea93c-0f9d-452c-8a3e-e7ca812a63a3}</destination>
-		</relationship>
-	</object>
-</objects>
+version https://git-lfs.github.com/spec/v1
+oid sha256:19e1d001ad2f3b5dcfa6ac93650d958fc8cd52977321e8a1788abb275f9d8619
+size 614

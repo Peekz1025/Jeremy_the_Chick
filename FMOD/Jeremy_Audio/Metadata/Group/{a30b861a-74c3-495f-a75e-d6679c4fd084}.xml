@@ -1,24 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.01.00">
-	<object class="MixerGroup" id="{a30b861a-74c3-495f-a75e-d6679c4fd084}">
-		<property name="name">
-			<value>SFX</value>
-		</property>
-		<relationship name="effectChain">
-			<destination>{0dc068c7-ad56-4572-9168-20b077cba6be}</destination>
-		</relationship>
-		<relationship name="panner">
-			<destination>{9c107f23-830a-4ecc-aac2-85b1ab64cde9}</destination>
-		</relationship>
-		<relationship name="output">
-			<destination>{7c79c327-ba56-46b8-b3dd-b0ab5018a39f}</destination>
-		</relationship>
-	</object>
-	<object class="MixerBusEffectChain" id="{0dc068c7-ad56-4572-9168-20b077cba6be}">
-		<relationship name="effects">
-			<destination>{48ea644b-2c8c-4182-873d-f641923ffb71}</destination>
-		</relationship>
-	</object>
-	<object class="MixerBusPanner" id="{9c107f23-830a-4ecc-aac2-85b1ab64cde9}" />
-	<object class="MixerBusFader" id="{48ea644b-2c8c-4182-873d-f641923ffb71}" />
-</objects>
+version https://git-lfs.github.com/spec/v1
+oid sha256:8c72f9158a13e358261ab023dac53871d7bf4100fb71d932bf60ef6155758318
+size 970

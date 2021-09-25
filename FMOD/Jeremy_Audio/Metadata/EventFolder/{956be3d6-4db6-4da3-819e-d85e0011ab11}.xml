@@ -1,11 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.01.00">
-	<object class="EventFolder" id="{956be3d6-4db6-4da3-819e-d85e0011ab11}">
-		<property name="name">
-			<value>Player</value>
-		</property>
-		<relationship name="folder">
-			<destination>{90816c14-84f5-47bc-9aa9-11b803185e4b}</destination>
-		</relationship>
-	</object>
-</objects>
+version https://git-lfs.github.com/spec/v1
+oid sha256:7060b59f479944dd9067e1d34b29df22933fc9b88f7c627101dd52bc95a1fd59
+size 364

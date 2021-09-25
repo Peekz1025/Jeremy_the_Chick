@@ -1,34 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
-
-public class Log_test : MonoBehaviour
-{
-    public void SetTime()
-    {
-        Time.timeScale = 1f;
-    }
-    
-    void OnEnable()
-    {
-        SceneManager.sceneLoaded += OnSceneLoaded;
-    }
-
-    void OnDisable()
-    {
-        SceneManager.sceneLoaded -= OnSceneLoaded;
-    }
-
-    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        Time.timeScale = 1;
-    }
-
-    void Awake()
-    {
-        QualitySettings.vSyncCount = 0;  // VSync must be disabled
-        Application.targetFrameRate = 45;
-    }
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b097a519110416a69b67bec5ce644c93e5a3aee5cdec5ee3bc3d44c8b25f5673
+size 645

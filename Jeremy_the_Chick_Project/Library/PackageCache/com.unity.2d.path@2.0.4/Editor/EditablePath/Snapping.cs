@@ -1,21 +1,3 @@
-﻿using UnityEngine;
-using UnityEditor;
-
-namespace UnityEditor.U2D.Path
-{
-    public class Snapping : ISnapping<Vector3>
-    {
-        public Vector3 Snap(Vector3 position)
-        {
-            return new Vector3(
-                Snap(position.x, EditorPrefs.GetFloat("MoveSnapX", 1f)),
-                Snap(position.y, EditorPrefs.GetFloat("MoveSnapY", 1f)),
-                position.z);
-        }
-
-        private float Snap(float value, float snap)
-        {
-            return Mathf.Round(value / snap) * snap;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:be15a7321c85aa2a878f9704e28e07b7eebc7124f7f7f389a6e95dc4a023e20d
+size 535
