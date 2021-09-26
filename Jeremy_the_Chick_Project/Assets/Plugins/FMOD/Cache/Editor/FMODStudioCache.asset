@@ -129,6 +129,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+--- !u!114 &-7381422074561884129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Background Music/Time
+  m_EditorClassIdentifier: 
+  Name: Time
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-7214331523502610201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -296,7 +316,7 @@ MonoBehaviour:
   Path: ../FMOD/Jeremy_Audio/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637572059449868850
+  lastModified: 637682567791003743
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -402,7 +422,7 @@ MonoBehaviour:
   ID:
     data1: 0
     data2: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-3813661852174952199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -587,7 +607,7 @@ MonoBehaviour:
   - {fileID: -5134224835489937341}
   StringsBanks:
   - {fileID: 3681040962970432856}
-  stringsBankWriteTime: 637572059449878488
+  stringsBankWriteTime: 637682567791013663
   cacheVersion: 6
 --- !u!114 &36235416776044876
 MonoBehaviour:
@@ -874,7 +894,7 @@ MonoBehaviour:
   Path: ../FMOD/Jeremy_Audio/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637572059449878488
+  lastModified: 637682567791013663
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -1228,7 +1248,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -4051704447313940174}
+  - {fileID: -7381422074561884129}
   MinDistance: 0
   MaxDistance: 0
   Length: 380754
