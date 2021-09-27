@@ -17,7 +17,7 @@ public class Sky_Builder : MonoBehaviour
     private void buildWorldParallax(Vector2 start)
     {
         World_Piece prev = null;
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < 2; i++)
         {
             GameObject go = getRandomPiece();
             World_Piece piece = GameObject.Instantiate(go).GetComponent<World_Piece>();

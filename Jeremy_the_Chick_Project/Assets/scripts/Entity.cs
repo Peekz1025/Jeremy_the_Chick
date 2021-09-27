@@ -9,11 +9,11 @@ public class Entity : MonoBehaviour
     private Vector2 _velocity;
     public Vector2 velocity { get { return _velocity; } set { setVelocity(value); } }
 
-    public bool enabled {get; private set;}
+    public bool enableD {get; private set;}
 
     protected void Start()
     {
-        enabled = true;
+        enableD = true;
     }
 
     public void setVelocity(Vector2 newVelocity)

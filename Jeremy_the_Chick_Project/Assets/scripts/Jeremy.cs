@@ -15,19 +15,12 @@ public class Jeremy : Entity
     // PARTICLE EFFECTS
     public ParticleSystem dust;
 
-
-
-
     public GameObject gameOverUI;
     public GameObject pauseButton;
     public GameObject itemCanvas;
     public GameObject highScoreGO;
 
     bool playdeath = false;
-
-
-
-
 
     // Start is called before the first frame update
     void Awake()
@@ -75,7 +68,7 @@ public class Jeremy : Entity
         }
 
         //checks to see if it collided with a spring below it
-        if (movementController.data.down.hit && movementController.data.down.obj.Contains("Spring") )
+        if (movementController.data.down.hit && movementController.data.down.obj.Contains("spring") )
         {
             //make sure its grounded
             //Debug.Log(movementController.data.down.velocity);

@@ -29,9 +29,9 @@ public class Parallax : MonoBehaviour
 
         transform.position = new Vector2(startPos + dist, cam.transform.position.y ); //* relativeMoveY
 
-        if (temp > startPos + length + 10)
-            startPos += length * 3;
-        else if (temp < startPos - length + 10)
-            startPos -= length * 3;
+        if (temp > startPos + length + 20)
+            startPos += length * 2;
+        else if (temp < startPos - length + 20)
+            startPos -= length * 2;
     }
 }

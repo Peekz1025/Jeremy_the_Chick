@@ -10,7 +10,7 @@ public class Touch_Drag : Touch_Sprite
     Rigidbody2D myRigid;
 
     FMOD.Studio.EventInstance playerState;
-    bool isplaying = false;
+    //bool isplaying = false;
 
 
     private void Awake()

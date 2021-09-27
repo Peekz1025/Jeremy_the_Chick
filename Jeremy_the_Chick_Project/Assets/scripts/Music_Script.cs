@@ -11,8 +11,6 @@ public class Music_Script : MonoBehaviour
     [SerializeField]
     [Range(0f, 1f)]
     private float danger;
-    private float currTime = 0.0f;
-    private float prevTime = 0.0f;
 
     public bool isplaying = false;
     public bool isPaused = false;
