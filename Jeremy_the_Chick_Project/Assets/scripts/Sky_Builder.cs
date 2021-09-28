@@ -10,7 +10,11 @@ public class Sky_Builder : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        pieces = Resources.LoadAll<GameObject>("sky_pieces/");
+        if (PlayerPrefs.GetString("Background") == "summer")
+            pieces = Resources.LoadAll<GameObject>("summer/sky_pieces/");
+        if (PlayerPrefs.GetString("Background") == "autumn")
+            pieces = Resources.LoadAll<GameObject>("autumn/sky_pieces/");
+
         buildWorldParallax(new Vector2(-50, 1.5f));
     }
 

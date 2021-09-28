@@ -24,6 +24,15 @@ public class Customize_Navigation : MonoBehaviour
     //jeremy
     public GameObject jeremyDefault;
 
+    //playing correct animations in customize pages
+    GameObject customizer;
+    Outfit_Animator op;
+
+    private void Start()
+    {
+        customizer = GameObject.FindGameObjectWithTag("Customizer");
+        op = customizer.GetComponent<Outfit_Animator>();
+    }
 
     public void EnterCustomizeMenu()
     {
@@ -53,6 +62,7 @@ public class Customize_Navigation : MonoBehaviour
         backgroundButton.SetActive(false);
         customizeJeremy1UI.SetActive(true);
         customizeBackButton.SetActive(false);
+        op.OutfitCheckP1();
     }
 
     public void ExitCustomizeJeremy1()
@@ -68,12 +78,14 @@ public class Customize_Navigation : MonoBehaviour
     {
         customizeJeremy1UI.SetActive(false);
         customizeJeremy2UI.SetActive(true);
+        op.OutfitCheckP2();
     }
 
     public void ExitCustomizeJeremy2()
     {
         customizeJeremy1UI.SetActive(true);
         customizeJeremy2UI.SetActive(false);
+        op.OutfitCheckP1();
     }
 
 

@@ -17,6 +17,7 @@ TagManager:
   - Egg
   - Ground
   - Hole
+  - Customizer
   layers:
   - Default
   - TransparentFX

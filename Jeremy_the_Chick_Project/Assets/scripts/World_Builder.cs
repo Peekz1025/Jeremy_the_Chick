@@ -16,6 +16,7 @@ public class World_Builder : MonoBehaviour
     GameObject Jeremy;
     Vector3 jeremyPosition;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,11 +26,13 @@ public class World_Builder : MonoBehaviour
         Jeremy = GameObject.FindGameObjectWithTag("TheJeremy");
         jeremyPosition = Jeremy.transform.position;
 
-        pieces = Resources.LoadAll<GameObject>("world_pieces/");
+        if (PlayerPrefs.GetString("Background") == "summer")
+            pieces = Resources.LoadAll<GameObject>("summer/world_pieces/");
+        if (PlayerPrefs.GetString("Background") == "autumn")
+            pieces = Resources.LoadAll<GameObject>("autumn/world_pieces/");
         FirstBuild(levelSize, buildPoint);
 
         eggSpawnerScript = this.GetComponent<Egg_Spawner>();
-
     }
 
     void Update()

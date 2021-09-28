@@ -45,6 +45,25 @@ public class Outfit_Checker : MonoBehaviour
         {
             JeremyAnimator.Play("walking_state_cap");
         }
-
+        if (currentOutfit == "halo")
+        {
+            JeremyAnimator.Play("walking_state_halo");
+        }
+        if (currentOutfit == "wizard")
+        {
+            JeremyAnimator.Play("walking_state_wizard");
+        }
+        if (currentOutfit == "pirate")
+        {
+            JeremyAnimator.Play("walking_state_pirate");
+        }
+        if (currentOutfit == "beanie")
+        {
+            JeremyAnimator.Play("walking_state_beanie");
+        }
+        if (currentOutfit == "crown")
+        {
+            JeremyAnimator.Play("walking_state_crown");
+        }
     }
 }

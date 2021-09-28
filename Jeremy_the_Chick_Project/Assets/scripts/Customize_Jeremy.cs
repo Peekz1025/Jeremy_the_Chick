@@ -7,9 +7,11 @@ public class Customize_Jeremy : MonoBehaviour
 {
     //egg collection number
     public int collectedEggs;
-    GameObject[] currentEggs;
-    public Text eggText;
-    public int cost = 50;
+    public Text eggText1;
+    public Text eggText2;
+    public Text eggText3;
+    public int cost1 = 50;
+    public int cost2 = 100;
 
     public string currentOutfit;
 
@@ -22,6 +24,16 @@ public class Customize_Jeremy : MonoBehaviour
     public GameObject shadesApplyButton;
     public GameObject capBuyButton;
     public GameObject capApplyButton;
+    public GameObject haloBuyButton;
+    public GameObject haloApplyButton;
+    public GameObject wizardBuyButton;
+    public GameObject wizardApplyButton;
+    public GameObject pirateBuyButton;
+    public GameObject pirateApplyButton;
+    public GameObject beanieBuyButton;
+    public GameObject beanieApplyButton;
+    public GameObject crownBuyButton;
+    public GameObject crownApplyButton;
 
     public GameObject normSprite;
     Animator normAnimator;
@@ -33,14 +45,30 @@ public class Customize_Jeremy : MonoBehaviour
     Animator shadesAnimator;
     public GameObject capSprite;
     Animator capAnimator;
+    public GameObject haloSprite;
+    Animator haloAnimator;
+    public GameObject wizardSprite;
+    Animator wizardAnimator;
+    public GameObject pirateSprite;
+    Animator pirateAnimator;
+    public GameObject beanieSprite;
+    Animator beanieAnimator;
+    public GameObject crownSprite;
+    Animator crownAnimator;
 
     public GameObject jeremyHomeSprite;
     SpriteRenderer jeremyHomeSpriteRenderer;
+
     public Sprite normSpriteHome;
     public Sprite partySpriteHome;
     public Sprite bowSpriteHome;
     public Sprite shadesSpriteHome;
     public Sprite capSpriteHome;
+    public Sprite haloSpriteHome;
+    public Sprite wizardSpriteHome;
+    public Sprite pirateSpriteHome;
+    public Sprite beanieSpriteHome;
+    public Sprite crownSpriteHome;
 
 
     // Start is called before the first frame update
@@ -52,7 +80,9 @@ public class Customize_Jeremy : MonoBehaviour
         {
             collectedEggs = PlayerPrefs.GetInt("CollectedEggs");
         }
-        eggText.text = "Eggs: " + collectedEggs;
+        eggText1.text = "Eggs: " + collectedEggs;
+        eggText2.text = "Eggs: " + collectedEggs;
+        eggText3.text = "Eggs: " + collectedEggs;
 
         //set buttons active based on if you have the outfit already
         if (!PlayerPrefs.HasKey("HasParty")) //if the variable does not exist at all
@@ -135,6 +165,107 @@ public class Customize_Jeremy : MonoBehaviour
             }
         }
 
+
+        if (!PlayerPrefs.HasKey("HasHalo"))
+        {
+            PlayerPrefs.SetString("HasHalo", "no");
+            haloBuyButton.SetActive(true);
+            haloApplyButton.SetActive(false);
+        }
+        else
+        {
+            if (PlayerPrefs.GetString("HasHalo") == "no")
+            {
+                haloBuyButton.SetActive(true);
+                haloApplyButton.SetActive(false);
+            }
+            if (PlayerPrefs.GetString("HasHalo") == "yes")
+            {
+                haloBuyButton.SetActive(false);
+                haloApplyButton.SetActive(true);
+            }
+        }
+
+        if (!PlayerPrefs.HasKey("HasWizard"))
+        {
+            PlayerPrefs.SetString("HasWizard", "no");
+            wizardBuyButton.SetActive(true);
+            wizardApplyButton.SetActive(false);
+        }
+        else
+        {
+            if (PlayerPrefs.GetString("HasWizard") == "no")
+            {
+                wizardBuyButton.SetActive(true);
+                wizardApplyButton.SetActive(false);
+            }
+            if (PlayerPrefs.GetString("HasWizard") == "yes")
+            {
+                wizardBuyButton.SetActive(false);
+                wizardApplyButton.SetActive(true);
+            }
+        }
+
+        if (!PlayerPrefs.HasKey("HasPirate"))
+        {
+            PlayerPrefs.SetString("HasPirate", "no");
+            pirateBuyButton.SetActive(true);
+            pirateApplyButton.SetActive(false);
+        }
+        else
+        {
+            if (PlayerPrefs.GetString("HasPirate") == "no")
+            {
+                pirateBuyButton.SetActive(true);
+                pirateApplyButton.SetActive(false);
+            }
+            if (PlayerPrefs.GetString("HasPirate") == "yes")
+            {
+                pirateBuyButton.SetActive(false);
+                pirateApplyButton.SetActive(true);
+            }
+        }
+
+        if (!PlayerPrefs.HasKey("HasBeanie"))
+        {
+            PlayerPrefs.SetString("HasBeanie", "no");
+            beanieBuyButton.SetActive(true);
+            beanieApplyButton.SetActive(false);
+        }
+        else
+        {
+            if (PlayerPrefs.GetString("HasBeanie") == "no")
+            {
+                beanieBuyButton.SetActive(true);
+                beanieApplyButton.SetActive(false);
+            }
+            if (PlayerPrefs.GetString("HasBeanie") == "yes")
+            {
+                beanieBuyButton.SetActive(false);
+                beanieApplyButton.SetActive(true);
+            }
+        }
+
+        if (!PlayerPrefs.HasKey("HasCrown"))
+        {
+            PlayerPrefs.SetString("HasCrown", "no");
+            crownBuyButton.SetActive(true);
+            crownApplyButton.SetActive(false);
+        }
+        else
+        {
+            if (PlayerPrefs.GetString("HasCrown") == "no")
+            {
+                crownBuyButton.SetActive(true);
+                crownApplyButton.SetActive(false);
+            }
+            if (PlayerPrefs.GetString("HasCrown") == "yes")
+            {
+                crownBuyButton.SetActive(false);
+                crownApplyButton.SetActive(true);
+            }
+        }
+
         jeremyHomeSpriteRenderer = jeremyHomeSprite.GetComponent<SpriteRenderer>();
 
         normAnimator = normSprite.GetComponent<Animator>();
@@ -142,6 +273,14 @@ public class Customize_Jeremy : MonoBehaviour
         bowAnimator = bowSprite.GetComponent<Animator>();
         shadesAnimator = shadesSprite.GetComponent<Animator>();
         capAnimator = capSprite.GetComponent<Animator>();
+
+        haloAnimator = haloSprite.GetComponent<Animator>();
+        wizardAnimator = wizardSprite.GetComponent<Animator>();
+        pirateAnimator = pirateSprite.GetComponent<Animator>();
+        beanieAnimator = beanieSprite.GetComponent<Animator>();
+        crownAnimator = crownSprite.GetComponent<Animator>();
+
+
 
         //set default animation
         if (PlayerPrefs.HasKey("JeremyOutfit"))
@@ -176,6 +315,37 @@ public class Customize_Jeremy : MonoBehaviour
                 capAnimator.Play("walking_state_cap");
                 jeremyHomeSpriteRenderer.sprite = capSpriteHome;
             }
+
+            if (PlayerPrefs.GetString("JeremyOutfit") == "halo")
+            {
+                currentOutfit = "halo";
+                haloAnimator.Play("walking_state_halo");
+                jeremyHomeSpriteRenderer.sprite = haloSpriteHome;
+            }
+            if (PlayerPrefs.GetString("JeremyOutfit") == "wizard")
+            {
+                currentOutfit = "wizard";
+                wizardAnimator.Play("walking_state_wizard");
+                jeremyHomeSpriteRenderer.sprite = wizardSpriteHome;
+            }
+            if (PlayerPrefs.GetString("JeremyOutfit") == "pirate")
+            {
+                currentOutfit = "pirate";
+                pirateAnimator.Play("walking_state_pirate");
+                jeremyHomeSpriteRenderer.sprite = pirateSpriteHome;
+            }
+            if (PlayerPrefs.GetString("JeremyOutfit") == "beanie")
+            {
+                currentOutfit = "beanie";
+                beanieAnimator.Play("walking_state_beanie");
+                jeremyHomeSpriteRenderer.sprite = beanieSpriteHome;
+            }
+            if (PlayerPrefs.GetString("JeremyOutfit") == "crown")
+            {
+                currentOutfit = "crown";
+                crownAnimator.Play("walking_state_crown");
+                jeremyHomeSpriteRenderer.sprite = crownSpriteHome;
+            }
         }
         else
         {
@@ -185,13 +355,13 @@ public class Customize_Jeremy : MonoBehaviour
 
         /*
         //manually add or subtract eggs * 2
-        collectedEggs = collectedEggs + 5;
-        eggText.text = "Eggs: " + collectedEggs;
+        collectedEggs += 10000;
+        eggText1.text = "Eggs: " + collectedEggs;
+        eggText2.text = "Eggs: " + collectedEggs;
+        eggText3.text = "Eggs: " + collectedEggs;
         PlayerPrefs.SetInt("CollectedEggs", collectedEggs);
         */
     }
-
-
 
     public void ApplyNorm()
     {
@@ -214,10 +384,12 @@ public class Customize_Jeremy : MonoBehaviour
     public void BuyParty()
     {
         //if you have enough eggs to buy
-        if (collectedEggs - cost >= 0)
+        if (collectedEggs - cost1 >= 0)
         {
-            collectedEggs = collectedEggs - cost;
-            eggText.text = "Eggs: " + collectedEggs;
+            collectedEggs = collectedEggs - cost1;
+            eggText1.text = "Eggs: " + collectedEggs;
+            eggText2.text = "Eggs: " + collectedEggs;
+            eggText3.text = "Eggs: " + collectedEggs;
             PlayerPrefs.SetInt("CollectedEggs", collectedEggs);
 
             //remove buy button & add apply button
@@ -246,14 +418,15 @@ public class Customize_Jeremy : MonoBehaviour
         capAnimator.Play("standing_state_cap");
     }
 
-
     public void BuyBow()
     {
         //if you have enough eggs to buy
-        if (collectedEggs - cost >= 0)
+        if (collectedEggs - cost1 >= 0)
         {
-            collectedEggs = collectedEggs - cost;
-            eggText.text = "Eggs: " + collectedEggs;
+            collectedEggs = collectedEggs - cost1;
+            eggText1.text = "Eggs: " + collectedEggs;
+            eggText2.text = "Eggs: " + collectedEggs;
+            eggText3.text = "Eggs: " + collectedEggs;
             PlayerPrefs.SetInt("CollectedEggs", collectedEggs);
 
             //remove buy button & add apply button
@@ -282,14 +455,15 @@ public class Customize_Jeremy : MonoBehaviour
         capAnimator.Play("standing_state_cap");
     }
 
-
     public void BuyShades()
     {
         //if you have enough eggs to buy
-        if (collectedEggs - cost >= 0)
+        if (collectedEggs - cost1 >= 0)
         {
-            collectedEggs = collectedEggs - cost;
-            eggText.text = "Eggs: " + collectedEggs;
+            collectedEggs = collectedEggs - cost1;
+            eggText1.text = "Eggs: " + collectedEggs;
+            eggText2.text = "Eggs: " + collectedEggs;
+            eggText3.text = "Eggs: " + collectedEggs;
             PlayerPrefs.SetInt("CollectedEggs", collectedEggs);
 
             //remove buy button & add apply button
@@ -318,14 +492,15 @@ public class Customize_Jeremy : MonoBehaviour
         capAnimator.Play("standing_state_cap");
     }
 
-
     public void BuyCap()
     {
         //if you have enough eggs to buy
-        if (collectedEggs - cost >= 0)
+        if (collectedEggs - cost1 >= 0)
         {
-            collectedEggs = collectedEggs - cost;
-            eggText.text = "Eggs: " + collectedEggs;
+            collectedEggs = collectedEggs - cost1;
+            eggText1.text = "Eggs: " + collectedEggs;
+            eggText2.text = "Eggs: " + collectedEggs;
+            eggText3.text = "Eggs: " + collectedEggs;
             PlayerPrefs.SetInt("CollectedEggs", collectedEggs);
 
             //remove buy button & add apply button
@@ -353,6 +528,190 @@ public class Customize_Jeremy : MonoBehaviour
         bowAnimator.Play("standing_state_bow");
         shadesAnimator.Play("standing_state_shades");
     }
+    
+    public void BuyHalo()
+    {
+        //if you have enough eggs to buy
+        if (collectedEggs - cost2 >= 0)
+        {
+            collectedEggs = collectedEggs - cost2;
+            eggText1.text = "Eggs: " + collectedEggs;
+            eggText2.text = "Eggs: " + collectedEggs;
+            eggText3.text = "Eggs: " + collectedEggs;
+            PlayerPrefs.SetInt("CollectedEggs", collectedEggs);
 
+            //remove buy button & add apply button
+            haloBuyButton.SetActive(false);
+            haloApplyButton.SetActive(true);
+
+            PlayerPrefs.SetString("HasHalo", "yes");
+        }
+    }
+
+    public void ApplyHalo()
+    {
+        //set current outfit to new outfit
+        currentOutfit = "halo";
+        PlayerPrefs.SetString("JeremyOutfit", currentOutfit);
+
+        jeremyHomeSpriteRenderer.sprite = haloSpriteHome;
+
+        //animate new sprite
+        haloAnimator.Play("walking_state_halo");
+
+        //cancel old animation
+        wizardAnimator.Play("standing_state_wizard");
+        pirateAnimator.Play("standing_state_pirate");
+        beanieAnimator.Play("standing_state_beanie");
+        crownAnimator.Play("standing_state_crown");
+    }
+
+    public void BuyWizard()
+    {
+        //if you have enough eggs to buy
+        if (collectedEggs - cost2 >= 0)
+        {
+            collectedEggs = collectedEggs - cost2;
+            eggText1.text = "Eggs: " + collectedEggs;
+            eggText2.text = "Eggs: " + collectedEggs;
+            eggText3.text = "Eggs: " + collectedEggs;
+            PlayerPrefs.SetInt("CollectedEggs", collectedEggs);
+
+            //remove buy button & add apply button
+            wizardBuyButton.SetActive(false);
+            wizardApplyButton.SetActive(true);
+
+            PlayerPrefs.SetString("HasWizard", "yes");
+        }
+    }
+
+    public void ApplyWizard()
+    {
+        //set current outfit to new outfit
+        currentOutfit = "wizard";
+        PlayerPrefs.SetString("JeremyOutfit", currentOutfit);
+
+        jeremyHomeSpriteRenderer.sprite = wizardSpriteHome;
+
+        //animate new sprite
+        wizardAnimator.Play("walking_state_wizard");
+
+        //cancel old animation
+        haloAnimator.Play("standing_state_halo");
+        pirateAnimator.Play("standing_state_pirate");
+        beanieAnimator.Play("standing_state_beanie");
+        crownAnimator.Play("standing_state_crown");
+    }
+    
+    public void BuyPirate()
+    {
+        //if you have enough eggs to buy
+        if (collectedEggs - cost2 >= 0)
+        {
+            collectedEggs = collectedEggs - cost2;
+            eggText1.text = "Eggs: " + collectedEggs;
+            eggText2.text = "Eggs: " + collectedEggs;
+            eggText3.text = "Eggs: " + collectedEggs;
+            PlayerPrefs.SetInt("CollectedEggs", collectedEggs);
+
+            //remove buy button & add apply button
+            pirateBuyButton.SetActive(false);
+            pirateApplyButton.SetActive(true);
+
+            PlayerPrefs.SetString("HasPirate", "yes");
+        }
+    }
+
+    public void ApplyPirate()
+    {
+        //set current outfit to new outfit
+        currentOutfit = "pirate";
+        PlayerPrefs.SetString("JeremyOutfit", currentOutfit);
+
+        jeremyHomeSpriteRenderer.sprite = pirateSpriteHome;
+
+        //animate new sprite
+        pirateAnimator.Play("walking_state_pirate");
+
+        //cancel old animation
+        haloAnimator.Play("standing_state_halo");
+        wizardAnimator.Play("standing_state_wizard");
+        beanieAnimator.Play("standing_state_beanie");
+        crownAnimator.Play("standing_state_crown");
+    }
+
+    public void BuyBeanie()
+    {
+        //if you have enough eggs to buy
+        if (collectedEggs - cost2 >= 0)
+        {
+            collectedEggs = collectedEggs - cost2;
+            eggText1.text = "Eggs: " + collectedEggs;
+            eggText2.text = "Eggs: " + collectedEggs;
+            eggText3.text = "Eggs: " + collectedEggs;
+            PlayerPrefs.SetInt("CollectedEggs", collectedEggs);
+
+            //remove buy button & add apply button
+            beanieBuyButton.SetActive(false);
+            beanieApplyButton.SetActive(true);
+
+            PlayerPrefs.SetString("HasBeanie", "yes");
+        }
+    }
+
+    public void ApplyBeanie()
+    {
+        //set current outfit to new outfit
+        currentOutfit = "beanie";
+        PlayerPrefs.SetString("JeremyOutfit", currentOutfit);
+
+        jeremyHomeSpriteRenderer.sprite = beanieSpriteHome;
+
+        //animate new sprite
+        beanieAnimator.Play("walking_state_beanie");
+
+        //cancel old animation
+        haloAnimator.Play("standing_state_halo");
+        wizardAnimator.Play("standing_state_wizard");
+        pirateAnimator.Play("standing_state_pirate");
+        crownAnimator.Play("standing_state_crown");
+    }
+
+    public void BuyCrown()
+    {
+        //if you have enough eggs to buy
+        if (collectedEggs - cost2 >= 0)
+        {
+            collectedEggs = collectedEggs - cost2;
+            eggText1.text = "Eggs: " + collectedEggs;
+            eggText2.text = "Eggs: " + collectedEggs;
+            eggText3.text = "Eggs: " + collectedEggs;
+            PlayerPrefs.SetInt("CollectedEggs", collectedEggs);
+
+            //remove buy button & add apply button
+            crownBuyButton.SetActive(false);
+            crownApplyButton.SetActive(true);
+
+            PlayerPrefs.SetString("HasCrown", "yes");
+        }
+    }
+
+    public void ApplyCrown()
+    {
+        //set current outfit to new outfit
+        currentOutfit = "crown";
+        PlayerPrefs.SetString("JeremyOutfit", currentOutfit);
+
+        jeremyHomeSpriteRenderer.sprite = crownSpriteHome;
+
+        //animate new sprite
+        crownAnimator.Play("walking_state_crown");
+
+        //cancel old animation
+        haloAnimator.Play("standing_state_halo");
+        wizardAnimator.Play("standing_state_wizard");
+        pirateAnimator.Play("standing_state_pirate");
+        beanieAnimator.Play("standing_state_beanie");
+    }
 
 }
