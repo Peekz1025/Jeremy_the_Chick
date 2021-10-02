@@ -63,18 +63,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\scripts\Animation_Test.cs" />
+    <Compile Include="Assets\scripts\Background_Checker.cs" />
     <Compile Include="Assets\scripts\Camera_Movement.cs" />
     <Compile Include="Assets\scripts\ClearTrash.cs" />
     <Compile Include="Assets\scripts\Collisions.cs" />
     <Compile Include="Assets\scripts\Customize_Background.cs" />
     <Compile Include="Assets\scripts\Customize_Jeremy.cs" />
-    <Compile Include="Assets\scripts\Customize_Navigation.cs" />
     <Compile Include="Assets\scripts\Destroyer.cs" />
     <Compile Include="Assets\scripts\Distance_Tracker.cs" />
     <Compile Include="Assets\scripts\Egg_Collection.cs" />
     <Compile Include="Assets\scripts\Egg_Spawner.cs" />
     <Compile Include="Assets\scripts\Entity.cs" />
     <Compile Include="Assets\scripts\Gravity.cs" />
+    <Compile Include="Assets\scripts\Home_Navigation.cs" />
     <Compile Include="Assets\scripts\Jeremy.cs" />
     <Compile Include="Assets\scripts\Log_test.cs" />
     <Compile Include="Assets\scripts\Lose_Condition.cs" />
@@ -88,6 +89,8 @@
     <Compile Include="Assets\scripts\Reset_PlayerPrefs.cs" />
     <Compile Include="Assets\scripts\Scene_Changer.cs" />
     <Compile Include="Assets\scripts\Sky_Builder.cs" />
+    <Compile Include="Assets\scripts\Sound_Changer.cs" />
+    <Compile Include="Assets\scripts\Sound_Manager.cs" />
     <Compile Include="Assets\scripts\Spawner.cs" />
     <Compile Include="Assets\scripts\Thud_Sound.cs" />
     <Compile Include="Assets\scripts\Touch_Drag.cs" />

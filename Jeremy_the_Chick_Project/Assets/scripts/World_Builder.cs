@@ -30,6 +30,7 @@ public class World_Builder : MonoBehaviour
             pieces = Resources.LoadAll<GameObject>("summer/world_pieces/");
         if (PlayerPrefs.GetString("Background") == "autumn")
             pieces = Resources.LoadAll<GameObject>("autumn/world_pieces/");
+
         FirstBuild(levelSize, buildPoint);
 
         eggSpawnerScript = this.GetComponent<Egg_Spawner>();
