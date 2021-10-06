@@ -117,7 +117,7 @@ public class Jeremy : Entity
             Debug.DrawRay(rayOrigin + (raySpacing * i), rayDirection*rayLength, Color.red);
 
             // put code here for if the object hits from above
-            if(hit)
+            if(hit) //if the object it collides with is not fire
             {
                 CreateDust();
                 setVelocity(new Vector2(velocity.x, jumpVelocity));
@@ -173,10 +173,6 @@ public class Jeremy : Entity
         FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Jeremy Hop");
     }
 
-
-
-
-
     void GameOver()
     {
         PlayDeathSound();
@@ -193,6 +189,15 @@ public class Jeremy : Entity
         {
             FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Death Sound");
             playdeath = true;
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Fire")
+        {
+            //Debug.Log("hit fire");
+            GameOver();
         }
     }
 

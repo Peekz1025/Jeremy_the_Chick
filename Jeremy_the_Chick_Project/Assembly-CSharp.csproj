@@ -72,14 +72,15 @@
     <Compile Include="Assets\scripts\Destroyer.cs" />
     <Compile Include="Assets\scripts\Distance_Tracker.cs" />
     <Compile Include="Assets\scripts\Egg_Collection.cs" />
-    <Compile Include="Assets\scripts\Egg_Spawner.cs" />
     <Compile Include="Assets\scripts\Entity.cs" />
+    <Compile Include="Assets\scripts\Fire.cs" />
     <Compile Include="Assets\scripts\Gravity.cs" />
     <Compile Include="Assets\scripts\Home_Navigation.cs" />
     <Compile Include="Assets\scripts\Jeremy.cs" />
     <Compile Include="Assets\scripts\Log_test.cs" />
     <Compile Include="Assets\scripts\Lose_Condition.cs" />
     <Compile Include="Assets\scripts\Music_Script.cs" />
+    <Compile Include="Assets\scripts\Object_Spawner.cs" />
     <Compile Include="Assets\scripts\Outfit_Animator.cs" />
     <Compile Include="Assets\scripts\Outfit_Checker.cs" />
     <Compile Include="Assets\scripts\Parallax.cs" />
@@ -95,6 +96,8 @@
     <Compile Include="Assets\scripts\Thud_Sound.cs" />
     <Compile Include="Assets\scripts\Touch_Drag.cs" />
     <Compile Include="Assets\scripts\Touch_Sprite.cs" />
+    <Compile Include="Assets\scripts\Trap_Object.cs" />
+    <Compile Include="Assets\scripts\Water.cs" />
     <Compile Include="Assets\scripts\World_Builder.cs" />
     <Compile Include="Assets\scripts\World_Piece.cs" />
     <None Include="Assets\Nature_pixel_art_assets\pixel_snapping_README.txt" />

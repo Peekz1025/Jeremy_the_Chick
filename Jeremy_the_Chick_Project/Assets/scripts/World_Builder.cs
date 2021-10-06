@@ -10,7 +10,7 @@ public class World_Builder : MonoBehaviour
     public List<GameObject> currentWorld;
     int worldTracker;
 
-    Egg_Spawner eggSpawnerScript;
+    Object_Spawner spawnerScript;
 
     //track jeremy postiton
     GameObject Jeremy;
@@ -33,7 +33,7 @@ public class World_Builder : MonoBehaviour
 
         FirstBuild(levelSize, buildPoint);
 
-        eggSpawnerScript = this.GetComponent<Egg_Spawner>();
+        spawnerScript = this.GetComponent<Object_Spawner>();
     }
 
     void Update()
@@ -97,8 +97,10 @@ public class World_Builder : MonoBehaviour
             prev = piece;
             currentWorld.Add(piece.gameObject);
 
-            // spawn eggs
-            eggSpawnerScript.SpawnEggs(piece);
+            // spawn eggs & fire
+            spawnerScript.SpawnEggs(piece);
+            //if (jeremyPosition.x > 100)
+                spawnerScript.SpawnFire(piece);
 
         }
     }

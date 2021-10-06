@@ -18,6 +18,8 @@ TagManager:
   - Ground
   - Hole
   - Customizer
+  - Fire
+  - Water
   layers:
   - Default
   - TransparentFX
