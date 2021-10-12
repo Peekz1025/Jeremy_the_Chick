@@ -1,0 +1,46 @@
+fileFormatVersion: 2
+guid: db423ee0e8022264984dab1216da7ce4
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - squareSummer1: {fileID: 21300012, guid: 4b00c4fcb1be91245b2dab5149c61c5d, type: 3}
+  - thicSummer1: {fileID: 21300026, guid: 4b00c4fcb1be91245b2dab5149c61c5d, type: 3}
+  - rectSummer1: {fileID: 21300014, guid: 4b00c4fcb1be91245b2dab5149c61c5d, type: 3}
+  - longSummer1: {fileID: 21300028, guid: 4b00c4fcb1be91245b2dab5149c61c5d, type: 3}
+  - smolSummer1: {fileID: 21300016, guid: 4b00c4fcb1be91245b2dab5149c61c5d, type: 3}
+  - squareSummer2: {fileID: -2128431553769161329, guid: f533dba8703ef074684e3e72310f49e3,
+      type: 3}
+  - thicSummer2: {fileID: -1530838674771315623, guid: f533dba8703ef074684e3e72310f49e3,
+      type: 3}
+  - rectSummer2: {fileID: 5527133794688425936, guid: f533dba8703ef074684e3e72310f49e3,
+      type: 3}
+  - longSummer2: {fileID: 8893899294371124583, guid: f533dba8703ef074684e3e72310f49e3,
+      type: 3}
+  - smolSummer2: {fileID: 5069988647673108312, guid: f533dba8703ef074684e3e72310f49e3,
+      type: 3}
+  - squareAutumn1: {fileID: 6184496080115979790, guid: ac85ad1f51f9c914baef810b8a0743a6,
+      type: 3}
+  - thicAutumn1: {fileID: 1748561714303898351, guid: ac85ad1f51f9c914baef810b8a0743a6,
+      type: 3}
+  - rectAutumn1: {fileID: 5090266009979834707, guid: ac85ad1f51f9c914baef810b8a0743a6,
+      type: 3}
+  - longAutumn1: {fileID: -5931425522352829455, guid: ac85ad1f51f9c914baef810b8a0743a6,
+      type: 3}
+  - smolAutumn1: {fileID: -1939086983558083233, guid: ac85ad1f51f9c914baef810b8a0743a6,
+      type: 3}
+  - squareAutumn2: {fileID: 2106676752178819890, guid: 454a0f31630f9f847a43275571439d22,
+      type: 3}
+  - thicAutumn2: {fileID: -569025621935905977, guid: 454a0f31630f9f847a43275571439d22,
+      type: 3}
+  - rectAutumn2: {fileID: 8004133977566705791, guid: 454a0f31630f9f847a43275571439d22,
+      type: 3}
+  - longAutumn2: {fileID: -5581655845989662014, guid: 454a0f31630f9f847a43275571439d22,
+      type: 3}
+  - smolAutumn2: {fileID: 6455303645624259792, guid: 454a0f31630f9f847a43275571439d22,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

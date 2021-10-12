@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{591996b4-e9f4-4594-a7fd-f05d4dbe65ff}">
+		<property name="assetPath">
+			<value>Splash.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.5921995464852607</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{46eea93c-0f9d-452c-8a3e-e7ca812a63a3}</destination>
+		</relationship>
+	</object>
+</objects>

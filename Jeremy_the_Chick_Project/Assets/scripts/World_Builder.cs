@@ -11,6 +11,7 @@ public class World_Builder : MonoBehaviour
     int worldTracker;
 
     Object_Spawner spawnerScript;
+    Tree_Color_Randomizer treeRandomizer;
 
     //track jeremy postiton
     GameObject Jeremy;
@@ -26,14 +27,18 @@ public class World_Builder : MonoBehaviour
         Jeremy = GameObject.FindGameObjectWithTag("TheJeremy");
         jeremyPosition = Jeremy.transform.position;
 
+        
         if (PlayerPrefs.GetString("Background") == "summer")
             pieces = Resources.LoadAll<GameObject>("summer/world_pieces/");
         if (PlayerPrefs.GetString("Background") == "autumn")
             pieces = Resources.LoadAll<GameObject>("autumn/world_pieces/");
+        
+        //pieces = Resources.LoadAll<GameObject>("world_pieces_tests/");
 
         FirstBuild(levelSize, buildPoint);
 
         spawnerScript = this.GetComponent<Object_Spawner>();
+        treeRandomizer = this.GetComponent<Tree_Color_Randomizer>();
     }
 
     void Update()
@@ -73,6 +78,8 @@ public class World_Builder : MonoBehaviour
             buildPoint = piece.rightAnchor.position;
             prev = piece;
             currentWorld.Add(piece.gameObject);
+
+            //treeRandomizer.RandomizeColors(piece);
         }
     }
 
@@ -99,12 +106,13 @@ public class World_Builder : MonoBehaviour
 
             // spawn eggs & fire
             spawnerScript.SpawnEggs(piece);
-            //if (jeremyPosition.x > 100)
-                spawnerScript.SpawnFire(piece);
+            spawnerScript.SpawnFire(piece, jeremyPosition);
 
+            //randomize colors of trees
+            treeRandomizer.RandomizeColors(piece);
         }
     }
-    
+
     private void DestroyWorld()
     {
         Destroy(currentWorld[worldTracker]);

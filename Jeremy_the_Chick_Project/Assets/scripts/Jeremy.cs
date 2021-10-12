@@ -31,6 +31,12 @@ public class Jeremy : Entity
     // Update is called once per frame
     void Update()
     {
+        if (this.transform.position.x >= 1500 && jumpReactDistance == 0.75f)
+        {
+            jumpReactDistance = 1.5f;
+            Debug.Log("jumpReactDistance: " + jumpReactDistance);
+        }
+
 
         if (right)
         {

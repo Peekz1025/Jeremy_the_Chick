@@ -6,6 +6,11 @@ public class Fire : MonoBehaviour
 {
     public bool stuckInGround = false;
 
+    private void Update()
+    {
+        if (this.transform.rotation != Quaternion.identity)
+            this.transform.rotation = Quaternion.identity;
+    }
 
     void OnCollisionEnter2D(Collision2D collision)
     {

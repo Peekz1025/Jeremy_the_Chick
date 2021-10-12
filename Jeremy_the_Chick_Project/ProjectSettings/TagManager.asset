@@ -20,6 +20,11 @@ TagManager:
   - Customizer
   - Fire
   - Water
+  - TreeSquare
+  - TreeThic
+  - TreeRectangle
+  - TreeLong
+  - TreeSmol
   layers:
   - Default
   - TransparentFX

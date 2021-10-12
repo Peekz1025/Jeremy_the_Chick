@@ -97,6 +97,7 @@
     <Compile Include="Assets\scripts\Touch_Drag.cs" />
     <Compile Include="Assets\scripts\Touch_Sprite.cs" />
     <Compile Include="Assets\scripts\Trap_Object.cs" />
+    <Compile Include="Assets\scripts\Tree_Color_Randomizer.cs" />
     <Compile Include="Assets\scripts\Water.cs" />
     <Compile Include="Assets\scripts\World_Builder.cs" />
     <Compile Include="Assets\scripts\World_Piece.cs" />
