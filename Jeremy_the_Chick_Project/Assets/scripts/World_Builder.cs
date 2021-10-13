@@ -27,13 +27,13 @@ public class World_Builder : MonoBehaviour
         Jeremy = GameObject.FindGameObjectWithTag("TheJeremy");
         jeremyPosition = Jeremy.transform.position;
 
-        
+        /*
         if (PlayerPrefs.GetString("Background") == "summer")
             pieces = Resources.LoadAll<GameObject>("summer/world_pieces/");
         if (PlayerPrefs.GetString("Background") == "autumn")
             pieces = Resources.LoadAll<GameObject>("autumn/world_pieces/");
-        
-        //pieces = Resources.LoadAll<GameObject>("world_pieces_tests/");
+        */
+        pieces = Resources.LoadAll<GameObject>("world_pieces_tests/");
 
         FirstBuild(levelSize, buildPoint);
 

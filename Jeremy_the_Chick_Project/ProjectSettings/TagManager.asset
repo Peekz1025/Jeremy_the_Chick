@@ -25,6 +25,7 @@ TagManager:
   - TreeRectangle
   - TreeLong
   - TreeSmol
+  - GameOverPanel
   layers:
   - Default
   - TransparentFX

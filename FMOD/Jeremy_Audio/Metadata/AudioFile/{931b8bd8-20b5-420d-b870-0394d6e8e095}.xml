@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{931b8bd8-20b5-420d-b870-0394d6e8e095}">
+		<property name="assetPath">
+			<value>81188__juskiddink__strong-wind-through-leaves.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>44.135328798185938</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{46eea93c-0f9d-452c-8a3e-e7ca812a63a3}</destination>
+		</relationship>
+	</object>
+</objects>

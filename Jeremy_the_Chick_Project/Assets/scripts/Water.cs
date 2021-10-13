@@ -9,13 +9,13 @@ public class Water : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
+        PlaySplashSound();
         Instantiate(splash, transform.position, transform.rotation);
         Destroy(this.gameObject);
-        //PlaySplashSound();
     }
 
     void PlaySplashSound()
     {
-        //FMODUnity.RuntimeManager.PlayOneShot("event:/Effects/Item Destroyed");
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Effects/Splash");
     }
 }

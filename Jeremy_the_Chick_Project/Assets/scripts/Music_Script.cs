@@ -20,7 +20,12 @@ public class Music_Script : MonoBehaviour
 
     void Start()
     {
-        backgroundMusic = FMODUnity.RuntimeManager.CreateInstance("event:/Music/Background Music");
+
+        if (PlayerPrefs.GetString("Background") == "summer")
+            backgroundMusic = FMODUnity.RuntimeManager.CreateInstance("event:/Music/Background Music Summer");
+        if (PlayerPrefs.GetString("Background") == "autumn")
+            backgroundMusic = FMODUnity.RuntimeManager.CreateInstance("event:/Music/Background Music Fall");
+
         jeremyWalk = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Jeremy Walks");
 
         PlayBackgroundSound();
