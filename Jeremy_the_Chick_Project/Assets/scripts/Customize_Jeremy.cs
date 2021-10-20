@@ -355,12 +355,22 @@ public class Customize_Jeremy : MonoBehaviour
 
         /*
         //manually add or subtract eggs * 2
-        collectedEggs += 10000;
+        collectedEggs -= 700;
         eggText1.text = "Eggs: " + collectedEggs;
         eggText2.text = "Eggs: " + collectedEggs;
         eggText3.text = "Eggs: " + collectedEggs;
         PlayerPrefs.SetInt("CollectedEggs", collectedEggs);
         */
+    }
+
+    public void FreeEggs()
+    {
+        //manually add or subtract eggs * 2
+        collectedEggs += 723;
+        eggText1.text = "Eggs: " + collectedEggs;
+        eggText2.text = "Eggs: " + collectedEggs;
+        eggText3.text = "Eggs: " + collectedEggs;
+        PlayerPrefs.SetInt("CollectedEggs", collectedEggs);
     }
 
     public void ApplyNorm()

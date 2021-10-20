@@ -82,8 +82,8 @@ public class Home_Navigation : MonoBehaviour
 
     public void EnterCustomizeJeremy2()
     {
-        customizeJeremy1UI.SetActive(false);
         customizeJeremy2UI.SetActive(true);
+        customizeJeremy1UI.SetActive(false);
         op.OutfitCheckP2();
     }
 

@@ -19,6 +19,8 @@ public class Fire : MonoBehaviour
     public bool isPaused = false;
     public bool isplaying = true;
 
+    public ParticleSystem burnExplosion;
+
 
     void Start()
     {
@@ -86,8 +88,7 @@ public class Fire : MonoBehaviour
         if (collision.gameObject.tag == "Log")
         {
             //Debug.Log("collided with log");
-            Destroy(collision.gameObject);
-            FMODUnity.RuntimeManager.PlayOneShot("event:/Effects/Fwoosh");
+            BurnLog(collision);
         }
 
         if (collision.gameObject.tag == "Spring")
@@ -146,5 +147,12 @@ public class Fire : MonoBehaviour
     {
         fireSound.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         fireSound.release();
+    }
+
+    void BurnLog(Collision2D collision)
+    {
+        Instantiate(burnExplosion, collision.transform.position, collision.transform.rotation);
+        Destroy(collision.gameObject);
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Effects/Fwoosh");   
     }
 }

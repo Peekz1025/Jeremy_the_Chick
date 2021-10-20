@@ -177,7 +177,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stuckInGround: 0
-  isplaying: 0
   gameOverUI: {fileID: 0}
   pausePanel: {fileID: 0}
   isPaused: 0
+  isplaying: 0
+  burnExplosion: {fileID: 5174527418502966, guid: e6f2c56ff210018478b3f933d49c5ef0,
+    type: 3}

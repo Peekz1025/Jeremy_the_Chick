@@ -55,6 +55,15 @@ public class Outfit_Animator : MonoBehaviour
 
         if (PlayerPrefs.GetString("JeremyOutfit") == "cap")
             capAnimator.Play("walking_state_cap");
+
+        else
+        {
+            normAnimator.Play("standing_state_norm");
+            partyAnimator.Play("standing_state_party");
+            bowAnimator.Play("standing_state_bow");
+            shadesAnimator.Play("standing_state_shades");
+            capAnimator.Play("standing_state_cap");
+        }
     }
 
     public void OutfitCheckP2()
@@ -73,5 +82,14 @@ public class Outfit_Animator : MonoBehaviour
 
         if (PlayerPrefs.GetString("JeremyOutfit") == "crown")
             crownAnimator.Play("walking_state_crown");
+
+        else
+        {
+            haloAnimator.Play("standing_state_halo");
+            wizardAnimator.Play("standing_state_wizard");
+            pirateAnimator.Play("standing_state_pirate");
+            beanieAnimator.Play("standing_state_beanie");
+            crownAnimator.Play("standing_state_crown");
+        }
     }
 }

@@ -68,6 +68,7 @@ public class Touch_Drag : Touch_Sprite
             myRigid.gravityScale = 0;
             myRigid.angularVelocity = 0;
             this.transform.rotation = new Quaternion(0,0,0,0);
+            myRigid.velocity = new Vector3(0,0,0);
 
             /*
             if (isplaying == false)
